@@ -1,0 +1,14 @@
+{
+    "powers": [
+        "origins:more_kinetic_damage",
+        "ogplus:avian/can_eat_seeds",
+        "ogplus:light_armor",
+        "origins:elytra",
+        "ogplus:avian/bird_boost"
+    ],
+    "icon": "minecraft:feather",
+    "order": 2,
+    "impact": 2,
+    "name": "Avian",
+    "description": "A Bird-like Origin that can takes to the sky."
+}

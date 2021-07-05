@@ -1,0 +1,11 @@
+{
+    "values": [
+        "minecraft:redstone_ore",
+        "minecraft:redstone_block",
+        "minecraft:piston",
+        "minecraft:sticky_piston",
+        "minecraft:target",
+        "minecraft:redstone_lamp",
+        "minecraft:observer"
+    ]
+}

@@ -1,0 +1,133 @@
+{
+    "type": "origins:multiple",
+    "fire_block_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "inFire"
+        }
+    },
+    "fire_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "onFire"
+        }
+    },
+    "magma_block_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "hotFloor"
+        }
+    },
+    "drown_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "drown"
+        }
+    },
+    "stung_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "sting"
+        }
+    },
+    "starvation_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "starve"
+        }
+    },
+    "suffocation_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "inWall"
+        }
+    },
+    "lightning_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "lightningBolt"
+        }
+    },
+    "magic_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "magic"
+        }
+    },
+    "indirect_magic_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "indirectMagic"
+        }
+    },
+    "lava_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "lava"
+        }
+    },
+    "cactus_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "cactus"
+        }
+    },
+    "void_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "outOfWorld"
+        }
+    },
+    "dragon_breath_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "dragonBreath"
+        }
+    },
+    "berry_immunity": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "sweetBerryBush"
+        }
+    },
+    "no_armor": {
+        "type": "origins:restrict_armor",
+        "head": {
+            "type": "origins:armor_value",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "chest": {
+            "type": "origins:armor_value",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "legs": {
+            "type": "origins:armor_value",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "feet": {
+            "type": "origins:armor_value",
+            "comparison": ">=",
+            "compare_to": 4
+        }
+    },
+    "name": "Forged Construct",
+    "description": "You are immune to many natural effects but can't wear any Armor except boots."
+}

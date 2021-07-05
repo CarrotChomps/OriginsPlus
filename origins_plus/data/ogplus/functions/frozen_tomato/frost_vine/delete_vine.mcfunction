@@ -1,0 +1,1 @@
+fill ~-1 ~ ~-1 ~1 ~ ~1 minecraft:air replace spruce_leaves

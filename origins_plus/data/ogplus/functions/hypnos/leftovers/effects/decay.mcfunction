@@ -1,0 +1,1 @@
+effect give @s wither 30 2

@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_on_item_use",
+    "entity_action": {
+        "type": "origins:feed",
+        "food": 2.0,
+        "saturation": 1.0
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "item": "minecraft:carrot"
+        }
+    },
+	"name": "Carrot Diet",
+	"description": "You gain extra saturation from eating Carrots."
+}

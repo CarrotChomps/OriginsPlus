@@ -1,0 +1,5 @@
+{
+    "type": "origins:ignore_water",
+    "name": "Lack of Natural Buoyancy",
+    "description": "You cannot float in water normally."
+}

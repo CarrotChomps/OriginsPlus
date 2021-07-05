@@ -1,0 +1,25 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command" :"function ogplus:gorgon/petrifying_gaze",
+        "permission_level": 4
+    },
+    "cooldown": 1200,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 16
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "head",
+        "item_condition": {
+          "type": "origins:armor_value",
+          "comparison": "<=",
+          "compare_to": 1
+        }
+    },
+    "name": "Petrifying Gaze §f§u(1)",
+    "description": "Activate to psuedo-petrify everything in a few blocks in front of you however, you cannot wear anything better than a leather helmet on your head."
+}

@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"ogplus:garden_fairy/form_change",
+		"ogplus:garden_fairy/human_form"
+	],
+	"icon": "minecraft:peony",
+	"order": 1,
+	"unchoosable": true,
+	"impact": 2,
+	"name": "Garden Human",
+	"description": "Infused with Magic, this variant of Fairy cares for natures and those that live in it."
+}

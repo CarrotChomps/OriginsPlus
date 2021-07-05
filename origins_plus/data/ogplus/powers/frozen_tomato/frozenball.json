@@ -1,0 +1,18 @@
+{
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:fireball",
+    "speed": 0.3,
+    "cooldown": 450,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 9
+    },
+    "tag": "{Item:{id:\"minecraft:snowball\",Count:1b}}",
+    "key": {
+        "key": "key.origins.secondary_active",
+        "continuous": false
+    },
+    "name": "Flaming Frost Ball §f§u(2)",
+    "description": "Fire a flaming snowball that explodes upon impact!"
+}

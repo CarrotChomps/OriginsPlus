@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"ogplus:elven_build",
+		"ogplus:wood_elf/wind_boost",
+		"ogplus:wood_elf/adaptive_cloak",
+        "origins:fall_immunity"
+	],
+	"icon": "minecraft:lime_concrete",
+	"order": 1,
+	"impact": 2,
+	"name": "Wood-Elf",
+	"description": "An adventurous variant of Elves that use nature to their advantage."
+}

@@ -1,0 +1,19 @@
+{
+    "type": "origins:multiple",
+    "passive": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:haste",
+                "duration": 100,
+                "amplifier": 1,
+                "show_particles": false,
+                "show_icon": false
+            }
+        },
+        "interval": 60
+    },
+    "name": "Hasty Miner",
+    "description": "You have Haste 2."
+}

@@ -1,0 +1,50 @@
+{
+    "type": "origins:multiple",
+    "flower_boost": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:speed",
+                "duration": 60,
+                "amplifier": 1,
+                "show_particles": false,
+                "show_icon": false
+            }
+        },
+        "interval": 40,
+        "condition": {
+            "type": "origins:biome",
+            "biomes": [
+                "minecraft:sunflower_plains",
+                "minecraft:plains",
+                "minecraft:flower_forest",
+                "minecraft:forest"
+            ]
+        }
+    },
+    "cold_slow": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:slowness",
+                "duration": 60,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": true
+            }
+        },
+        "interval": 40,
+        "condition": {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:temperature",
+                "comparison": "<=",
+                "compare_to": 0
+            }
+        }
+    },
+    "name": "Flowerly Family",
+    "description": "You gain speed in Flowerly Biomes but gain slowness in Cold Biomes."
+}

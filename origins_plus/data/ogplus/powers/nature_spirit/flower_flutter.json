@@ -1,0 +1,29 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+            "effect": "minecraft:slow_falling",
+            "duration": 30,
+            "amplifier": 0,
+            "show_particles": false
+        }
+    },
+    "interval": 1,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:fall_distance",
+                "comparison": ">=",
+                "compare_to": 2
+            },
+            {
+                "type": "origins:sneaking",
+                "inverted": true
+            }
+        ]
+    },
+    "name": "Flower Flutter",
+    "description": "Walking off a surface gives you slow falling. This can be negated by crouching."
+}

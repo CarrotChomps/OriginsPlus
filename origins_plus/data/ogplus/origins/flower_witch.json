@@ -1,0 +1,11 @@
+{
+    "powers": [
+        "ogplus:flower_witch/natural_brewing",
+        "ogplus:flower_witch/can_eat_flora"
+    ],
+    "icon": "minecraft:splash_potion",
+    "order": 1,
+    "impact": 2,
+    "name": "Flower Witch",
+    "description": "By using what nature provides them, they create fun and chaose at the same time!"
+}

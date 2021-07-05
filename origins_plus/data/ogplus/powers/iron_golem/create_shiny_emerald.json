@@ -1,0 +1,47 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:change_resource",
+                "resource": "*:iron_golem/living_steel_resource",
+                "change": -3
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "give @s emerald{display:{Name:'{\"text\":\"Emergency Emerald\",\"color\":\"green\",\"italic\":false}',Lore:['[{\"text\":\"\"},{\"text\":\"Summons an Iron Golem\",\"color\":\"gray\",\"italic\":true}]','[{\"text\":\"\"},{\"text\":\"Origin when dropped.\",\"color\":\"gray\",\"italic\":true}]']},ironGolemSummon:1b,Enchantments:[{}]} 1",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.iron_golem.attack",
+                "pitch": 0.75
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "*:iron_golem/living_steel_resource",
+                "comparison": ">=",
+                "compare_to": 1
+            },
+            {
+                "type": "origins:power_active",
+                "power": "*:iron_golem/living_steel_toggle_generation"
+            }
+        ]
+    },
+    "cooldown": 10,
+    "key": {
+        "key": "key.origins.secondary_active"
+    },
+    "hud_render": {
+        "should_render": false
+    },
+    "name": "Emergency Emerald §f§u(2)",
+    "description": "Create an Emerald that, when dropped, will consume it and summon you at its location."
+}

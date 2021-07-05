@@ -1,0 +1,27 @@
+{
+    "type": "origins:multiple",
+    "effect": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:exhaust",
+                    "amount": 0.5
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function ogplus:fairy_fish/ocean_aura",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "interval": 120,
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    },
+    "name": "Heart Beat of the Sea",
+    "description": "Give all nearby players water breathing and conduit power while you are underwater. However you drain hunger faster."
+}

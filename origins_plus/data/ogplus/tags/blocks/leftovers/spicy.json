@@ -1,0 +1,11 @@
+{
+    "values": [
+        "minecraft:fire",
+        "minecraft:coal_ore",
+        "minecraft:coal_block",
+        "minecraft:magma_block",
+        "minecraft:soul_campfire",
+        "minecraft:campfire",
+        "minecraft:lava"
+    ]
+}

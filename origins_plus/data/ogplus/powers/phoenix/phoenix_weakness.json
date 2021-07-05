@@ -1,0 +1,17 @@
+{
+    "type": "origins:multiple",
+    "magic": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "magic"
+        },
+        "modifier": {
+            "name": "Weak to Magic",
+            "operation": "addition",
+            "value": 4
+        }
+    },
+    "name": "Magical Weakness",
+    "description": "Water disables your abilites and you take additional damage from potions of harming and poison."
+}

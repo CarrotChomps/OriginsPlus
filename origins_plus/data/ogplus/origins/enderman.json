@@ -1,0 +1,21 @@
+{
+	"powers": [
+		"ogplus:enderman/enderman_teleport",
+		"ogplus:enderman/force_of_habit",
+		"ogplus:enderman/silk_touch_hands",
+		"ogplus:enderman/royal_presence",
+		"ogplus:enderman/force_of_habit_benefit",
+		"ogplus:enderman/hydrophobic",
+		"ogplus:enderman/mine_faster_with_pick",
+		"ogplus:enderman/ender_build",
+		"ogplus:enderman/cant_see_pumpkin",
+		"ogplus:enderman/sleep_in_end",
+		"origins:ender_particles",
+		"ogplus:enderman/agoraphobic"
+	],
+	"icon": "minecraft:ender_pearl",
+	"order": 1,
+	"impact": 2,
+	"name": "§5Enderian Prince",
+	"description": "An Origin that is considered a rare and powerful variant of the Endermen."
+}

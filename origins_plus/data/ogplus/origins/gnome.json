@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"ogplus:gnome/big_boost",
+		"ogplus:gnome/shroom_touch",
+		"ogplus:small_size"
+	],
+	"icon": "minecraft:red_mushroom_block",
+	"order": 1,
+	"impact": 2,
+	"name": "Gnome",
+	"description": "Gnomes take delight in life, enjoying every moment of exploration, investigation, creation, and play."
+}

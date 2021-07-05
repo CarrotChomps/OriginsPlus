@@ -1,0 +1,14 @@
+{
+    "powers": [
+        "ogplus:fire_fairy/fire_resistance",
+        "ogplus:fire_fairy/flame_fling",
+        "ogplus:fire_fairy/fairy_flare",
+        "origins:fall_immunity",
+        "ogplus:fairy/fairy_form"
+    ],
+    "icon": "minecraft:soul_campfire",
+    "order": 1,
+    "impact": 2,
+    "name": "Fire Fairy",
+    "description": "Fire Fairies tap into the power of flames to help others in need."
+}

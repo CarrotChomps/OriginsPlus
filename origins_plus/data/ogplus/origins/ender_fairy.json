@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"ogplus:ender_fairy/ender_pearl",
+		"ogplus:ender_fairy/ender_fairy_flight",
+		"ogplus:ender_fairy/ender_fairy_form",
+		"ogplus:ender_fairy/ender_particle",
+		"ogplus:ender_fairy/cant_see_pumpkin",
+		"ogplus:ender_fairy/hydrophobic"
+	],
+	"icon": "minecraft:chorus_fruit",
+	"order": 1,
+	"impact": 2,
+	"name": "Ender Fairy",
+	"description": "A unique fairy race that comes from the End. They use their native abilities to explore and interact with others."
+}

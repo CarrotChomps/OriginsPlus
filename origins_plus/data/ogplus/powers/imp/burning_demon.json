@@ -1,0 +1,48 @@
+{
+    "type": "origins:multiple",
+    "bonus_damage": {
+        "type": "origins:modify_damage_dealt",
+        "condition": {
+            "type": "origins:on_fire"
+        },
+        "modifier": {
+            "name": "Additional damage while on fire",
+            "value": 3,
+            "operation": "addition"
+        }
+    },
+    "bonus_speed": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:speed",
+                "duration": 20,
+                "amplifier": 3,
+                "show_particles": false,
+                "show_icon": false
+            }
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:on_fire"
+                },
+                {
+                    "type": "origins:sprinting"
+                }
+            ]
+        },
+        "key": {
+            "key": "key.forward",
+            "continuous": true
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+	"name": "Burning Demon",
+	"description": "When on fire you deal more damage and gain a burst of speed."
+}

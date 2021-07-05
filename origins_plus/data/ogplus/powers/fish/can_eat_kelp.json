@@ -1,0 +1,52 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:feed",
+                "food": 1,
+                "saturation": 2
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "clear @s minecraft:kelp 1",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.generic.eat"
+            }
+        ]
+    },
+    "key": {
+        "key": "key.attack",
+        "continuous": true
+    },
+    "cooldown": 10,
+    "hud_render": {
+        "should_render": false
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:kelp"
+                    }
+                }
+            },
+            {
+                "type": "origins:food_level",
+                "comparison": "<",
+                "compare_to": 20
+            }
+        ]
+    },
+    "name": "Kelp Palate",
+    "description": "Left Click with Kelp in your hand to eat it."
+}

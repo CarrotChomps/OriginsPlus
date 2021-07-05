@@ -1,0 +1,59 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:change_resource",
+                "resource": "*:iron_golem/living_steel_resource",
+                "change": -1
+            },
+            {
+                "type": "origins:add_velocity",
+                "space": "local",
+                "z": 0.5
+            },
+            {
+                "type": "origins:add_velocity",
+                "y": 0.5
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:poof ~ ~1 ~ 0.25 0.5 0.25 0.1 10",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.iron_golem.attack",
+                "pitch": 0.75
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "*:iron_golem/living_steel_resource",
+                "comparison": ">=",
+                "compare_to": 1
+            },
+            {
+                "type": "origins:power_active",
+                "power": "*:iron_golem/living_steel_toggle_generation"
+            },
+            {
+                "type": "origins:on_block",
+                "inverted": true
+            }
+        ]
+    },
+    "cooldown": 5,
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "hud_render": {
+        "should_render": false
+    },
+    "hidden": true
+}

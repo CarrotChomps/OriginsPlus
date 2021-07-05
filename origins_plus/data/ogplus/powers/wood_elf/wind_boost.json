@@ -1,0 +1,41 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "space": "local",
+                "z": 1
+            },
+            {
+                "type": "origins:add_velocity",
+                "y": 0.25
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.parrot.fly"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:cloud ~ ~ ~ 0.5 0 0.5 0 10",
+                "permission_level": 4
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:on_block",
+        "inverted": true
+    },
+    "key": {
+        "key": "key.jump"
+    },
+    "cooldown": 60,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 14
+    },
+	"name": "Wind Boost",
+	"description": "You can double jump using the power of the Wind."
+}

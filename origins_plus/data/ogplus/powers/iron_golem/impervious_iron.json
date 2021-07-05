@@ -1,0 +1,68 @@
+{
+    "type": "origins:modify_damage_taken",
+    "self_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:change_resource",
+                "resource": "*:iron_golem/living_steel_resource",
+                "change": -1
+            },
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:resource",
+                    "resource": "*:iron_golem/living_steel_resource",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                "if_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:item.shield.break",
+                            "pitch": 0.75
+                        },
+                        {
+                            "type": "origins:execute_command",
+                            "command": "particle minecraft:poof ~ ~1 ~ 0.25 0.5 0.25 0.1 10",
+                            "permission_level": 4
+                        }
+                    ]
+                },
+                "else_action": {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.iron_golem.hurt"
+                }
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:crit ~ ~1 ~ 0.25 0.5 0.25 0.1 10",
+                "permission_level": 4
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:resource",
+                "resource": "*:iron_golem/living_steel_resource",
+                "comparison": ">",
+                "compare_to": 0
+            },
+            {
+                "type": "origins:power_active",
+                "power": "*:iron_golem/living_steel_toggle_generation"
+            }
+        ]
+    },
+    "modifier": {
+        "name": "Living Steel Blocks Damage",
+        "operation": "multiply_base",
+        "value": -1
+    },
+    "name": "Impervious Iron",
+    "description": "Consume Living Steel in place of taking damage."
+}

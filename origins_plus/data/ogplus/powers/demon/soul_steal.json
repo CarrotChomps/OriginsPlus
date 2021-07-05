@@ -1,0 +1,77 @@
+{
+    "type": "origins:multiple",
+    "heal": {
+        "type": "origins:self_action_on_hit",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:feed",
+                    "food": 4,
+                    "saturation": 2
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 6.0
+                }
+            ]
+        },
+        "cooldown": 300,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "deal": {
+        "type": "origins:target_action_on_hit",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:instant_damage",
+                        "duration": 1,
+                        "amplifier": 0
+                    }
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.wither.ambient voice @a[distance=..7] ~ ~ ~ 0.75 1.25",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:soul ~ ~0.5 ~ 0.2 0.2 0.2 0 3 normal",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "cooldown": 450,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 5
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:air"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:sneaking",
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "name": "Vampiric Touch",
+    "description": "Damaging an entity with your hands causes you to steal their soul, dealing bonus damage to them and healing you."
+}

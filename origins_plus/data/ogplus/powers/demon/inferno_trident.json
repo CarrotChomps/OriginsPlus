@@ -1,0 +1,22 @@
+{
+    "type": "origins:modify_projectile_damage",
+    "damage_condition": {
+        "type": "origins:projectile",
+        "projectile": "minecraft:trident"
+    },
+    "target_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:set_on_fire",
+                "duration": 5
+            }
+        ]
+    },
+    "modifier": {
+        "operation": "addition",
+        "value": 1.0
+    },
+    "name": "Inferno Trident",
+    "description": "Thrown Tridents set the target on Fire and deal bonus damage. This also triggers Vampiric Touch."
+}

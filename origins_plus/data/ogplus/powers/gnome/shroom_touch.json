@@ -1,0 +1,59 @@
+{
+    "type": "origins:multiple",
+    "red": {
+        "type": "origins:action_on_block_break",
+        "entity_action": {
+            "type": "origins:give",
+            "stack": {
+                "item": "minecraft:red_mushroom_block"
+            }
+        },
+        "block_action": {
+            "type": "origins:set_block",
+            "block": "minecraft:air"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:red_mushroom_block"
+        },
+        "only_when_harvested": false
+    },
+    "brown": {
+        "type": "origins:action_on_block_break",
+        "entity_action": {
+            "type": "origins:give",
+            "stack": {
+                "item": "minecraft:brown_mushroom_block"
+            }
+        },
+        "block_action": {
+            "type": "origins:set_block",
+            "block": "minecraft:air"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:brown_mushroom_block"
+        },
+        "only_when_harvested": false
+    },
+    "stem": {
+        "type": "origins:action_on_block_break",
+        "entity_action": {
+            "type": "origins:give",
+            "stack": {
+                "item": "minecraft:mushroom_stem"
+            }
+        },
+        "block_action": {
+            "type": "origins:set_block",
+            "block": "minecraft:air"
+        },
+        "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:mushroom_stem"
+        },
+        "only_when_harvested": false
+    },
+    "name": "Shroom Touch",
+    "description": "You can collect Mushroom Blocks without the need of Slik Touch."
+}

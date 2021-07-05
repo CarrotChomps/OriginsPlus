@@ -1,0 +1,40 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:feed",
+        "food": 6,
+        "saturation": 4
+    },
+    "cooldown": 41,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.use"
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:air"
+                    }
+                },
+                "inverted": true
+            },
+            {
+                "type": "origins:resource",
+                "resource": "*:enderman/force_of_habit",
+                "comparison": ">",
+                "compare_to": 0
+            }
+        ]
+    },
+    "hidden": true,
+    "name": "Force of Habit",
+    "description": "Placing a block while Ender Hand is on cooldown restores Hunger."
+}

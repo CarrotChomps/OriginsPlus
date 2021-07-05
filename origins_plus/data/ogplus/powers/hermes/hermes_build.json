@@ -1,0 +1,40 @@
+{
+    "type": "origins:multiple",
+    "modify_size": {
+        "type": "extraorigins:modify_size",
+        "scale": 1.5
+    },
+    "fix_width_on_callback": {
+        "type": "origins:action_on_callback",
+        "entity_action_removed": {
+            "type": "origins:execute_command",
+            "command": "scale reset",
+            "permission_level": 4
+        }
+    },
+    "attribute_modifiers": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "name": "Origin modifier",
+                "attribute": "reach-entity-attributes:reach",
+                "value": 0.75,
+                "operation": "addition"
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "reach-entity-attributes:attack_range",
+                "value": 0.75,
+                "operation": "addition"
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "minecraft:generic.movement_speed",
+                "value": 0.05,
+                "operation": "addition"
+            }
+        ]
+    },
+    "name": "Olympic Build",
+    "description": "You are 3m tall have an extended reach."
+}

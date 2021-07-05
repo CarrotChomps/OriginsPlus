@@ -1,0 +1,82 @@
+{
+    "type": "origins:multiple",
+    "lift": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:levitation",
+                        "duration": 200,
+                        "amplifier": 2,
+                        "show_particles": false
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.bat.takeoff",
+                    "volume": 0.1
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:on_block",
+                    "inverted": true
+                }
+            ]
+        },
+        "key": {
+            "key": "key.jump"
+        },
+        "cooldown": 400,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 0
+        }
+    },
+    "cancel": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "effect clear @s levitation",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.bat.takeoff",
+                    "pitch": 0.5,
+                    "volume": 0.1
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*_lift",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "key": {
+            "key": "key.sneak"
+        },
+        "cooldown": 60,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "name": "Levitate",
+    "description": "Jumping while in the air will give you levitation. Crouching in the air will cancel this levitation."
+}

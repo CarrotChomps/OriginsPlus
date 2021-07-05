@@ -1,0 +1,62 @@
+{
+    "type": "origins:attacker_action_when_hit",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:if_else",
+                "condition": {
+                    "type": "origins:on_block"
+                },
+                "if_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:add_velocity",
+                            "y": 0.5
+                        },
+                        {
+                            "type": "origins:add_velocity",
+                            "space": "local",
+                            "z": -0.5
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.slime.squish",
+                            "pitch": 1,
+                            "volume": 1
+                        }
+                    ]
+                },
+                "else_action": {
+                    "type": "origins:and",
+                    "actions": [
+                        {
+                            "type": "origins:add_velocity",
+                            "y": 1.5
+                        },
+                        {
+                            "type": "origins:add_velocity",
+                            "space": "local",
+                            "z": -1.5
+                        },
+                        {
+                            "type": "origins:play_sound",
+                            "sound": "minecraft:entity.slime.squish",
+                            "pitch": 0.75,
+                            "volume": 1
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "cooldown": 100,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 17
+    },
+    "name": "Bouncy Belly",
+    "description": "You launch people backwards when they hit you. The power of the launch increases if the attack is in air."
+}

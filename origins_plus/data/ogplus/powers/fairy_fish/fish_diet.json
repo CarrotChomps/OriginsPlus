@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_on_item_use",
+    "entity_action": {
+        "type": "origins:feed",
+        "food": 6.0,
+        "saturation": 6.0
+    },
+    "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+            "tag": "minecraft:fishes"
+        }
+    },
+    "name": "Fish Diet",
+    "description": "You gain extra saturation from eating fish."
+}

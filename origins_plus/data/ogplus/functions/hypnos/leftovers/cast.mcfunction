@@ -1,0 +1,4 @@
+execute if block ~ ~ ~ #ogplus:leftovers/legal_cast if score @s scanCount < *leftoversMax scanCount positioned ^ ^ ^0.5 run scoreboard players add @s scanCount 1
+#execute if block ~ ~ ~ #ogplus:leftovers/legal_cast if score @s scanCount < *leftoversMax scanCount positioned ^ ^ ^0.5 run particle minecraft:flame ~ ~ ~ 0 0 0 0 1
+execute if block ~ ~ ~ #ogplus:leftovers/legal_cast if score @s scanCount < *leftoversMax scanCount positioned ^ ^ ^0.5 run function ogplus:hypnos/leftovers/cast
+execute unless block ~ ~ ~ #ogplus:leftovers/legal_cast unless block ~ ~ ~ #ogplus:leftovers/blacklisted unless entity @s[distance=..0.1] run function ogplus:hypnos/leftovers/eat_block

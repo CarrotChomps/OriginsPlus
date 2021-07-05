@@ -1,0 +1,12 @@
+{
+    "values": [
+        "minecraft:glowstone",
+        "minecraft:sea_lantern",
+        "minecraft:torch",
+        "minecraft:jack_o_lantern",
+        "minecraft:shroomlight",
+        "minecraft:lantern",
+        "minecraft:soul_lantern",
+        "minecraft:soul_torch"
+    ]
+}

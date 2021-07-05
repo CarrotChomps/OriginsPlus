@@ -1,0 +1,17 @@
+{
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:item",
+    "speed": 0.5,
+    "cooldown": 1600,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 22
+    },
+    "tag": "{Age:0,PickupDelay:500,Tags:[\"forest_ward\"],Item:{id:\"minecraft:oak_sapling\",Count:1b}}",
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "name": "Forest Ward §f§u(1)",
+    "description": "Activate to summon a sapling that protects nearby players."
+}

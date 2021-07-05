@@ -1,0 +1,14 @@
+{
+    "powers": [
+        "ogplus:small_size",
+        "ogplus:fire_fairy/fire_resistance",
+        "ogplus:imp/carnivore",
+        "ogplus:imp/burning_demon",
+        "ogplus:imp/lava_float"
+    ],
+    "icon": "minecraft:blaze_powder",
+    "order": 1,
+    "impact": 2,
+    "name": "Imp",
+    "description": "Tiny chaotic people that come from the Nether and like hot climates."
+}

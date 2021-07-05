@@ -1,0 +1,19 @@
+{
+    "type": "origins:multiple",
+    "effect": {
+        "type": "origins:toggle_night_vision",
+        "strength": 0.5,
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "key": {
+            "active_by_default": false,
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "name": "Cave Vision §f§u(2)",
+    "description": "Toggle to give yourself Night Vision."
+}

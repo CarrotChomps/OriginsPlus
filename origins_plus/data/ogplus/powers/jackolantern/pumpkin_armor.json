@@ -1,0 +1,22 @@
+{
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:name",
+                "name": "inFire"
+            },
+            {
+                "type": "origins:fire"
+            }
+        ]
+    },
+    "modifier": {
+        "name": "Living Steel Blocks Damage",
+        "operation": "addition",
+        "value": -3
+    },
+    "name": "Pumpkin Armor",
+    "description": "You take reduced fire damage."
+}

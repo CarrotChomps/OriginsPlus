@@ -1,0 +1,26 @@
+{
+    "type": "origins:prevent_entity_render",
+    "entity_condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:shield"
+                    }
+                }
+            },
+            {
+                "type": "origins:status_effect",
+                "effect": "minecraft:slowness",
+                "min_amplifier": 200,
+                "inverted": true
+            }
+        ]
+    },
+    "name": "Evolved Reaction",
+    "description": "Due to some natural instinct you cannot see anyone that is holding a shield in their main hand unless they are petrified."
+}

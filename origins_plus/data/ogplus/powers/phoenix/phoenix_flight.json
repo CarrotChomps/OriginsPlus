@@ -1,0 +1,59 @@
+{
+    "type": "origins:multiple",
+    "wings": {
+        "type": "origins:elytra_flight",
+        "render_elytra": true
+    },
+    "particle": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle flame ^1 ^0.4 ^0.4 0.1 0 0.1 0 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle flame ^-1 ^0.4 ^0.4 0.1 0 0.1 0 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "stopsound @s * minecraft:item.elytra.flying",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:fall_flying"
+        }
+    },
+    "sound": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.ender_dragon.flap",
+                    "volume": 0.3,
+                    "pitch": 1
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.ambient",
+                    "volume": 1
+                }
+            ]
+        },
+        "interval": 40,
+        "condition": {
+            "type": "origins:fall_flying"
+        }
+    },
+    "name": "Phoenix Flight",
+    "description": "You use the power of fire rather than wind to take you up into the air."
+}

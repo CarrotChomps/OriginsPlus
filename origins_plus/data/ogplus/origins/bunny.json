@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"origins:vegetarian",
+		"ogplus:bunny/carrot_diet",
+		"ogplus:medium_size",
+		"ogplus:bunny/toggle_jump_boost"
+	],
+	"icon": "minecraft:carrot",
+	"order": 1,
+	"impact": 2,
+	"name": "Rabbitfolk",
+	"description": "A Rabbit-like Origin who loves hopping and vegetables."
+}

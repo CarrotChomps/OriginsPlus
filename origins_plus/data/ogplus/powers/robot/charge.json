@@ -1,0 +1,131 @@
+{
+    "type": "origins:multiple",
+    "starter_kit": {
+        "type": "origins:starting_equipment",
+        "stacks": [
+            {
+                "item": "minecraft:redstone_torch"
+            }
+        ]
+    },
+    "active": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:feed",
+                    "food": 2,
+                    "saturation": 6
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:dust 1 0 0 1 ~ ~1 ~ 0.5 0.5 0.5 0 10",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.zombie_villager.converted neutral @a ~ ~ ~ 0.1 2",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<",
+                    "compare_to": 20
+                },
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:or",
+                        "conditions": [
+                            {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:block_state",
+                                        "property": "powered",
+                                        "value": true
+                                    },
+                                    {
+                                        "type": "origins:in_tag",
+                                        "tag": "ogplus:robot/charge"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:in_tag",
+                                "tag": "ogplus:robot/wireless_charge"
+                            },
+                            {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:block_state",
+                                        "property": "power",
+                                        "comparison": ">",
+                                        "compare_to": 1
+                                    },
+                                    {
+                                        "type": "origins:block",
+                                        "block": "minecraft:redstone_wire"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:block_state",
+                                        "property": "lit",
+                                        "value": true
+                                    },
+                                    {
+                                        "type": "origins:block",
+                                        "block": "minecraft:redstone_torch"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "origins:and",
+                                "conditions": [
+                                    {
+                                        "type": "origins:block_state",
+                                        "property": "lit",
+                                        "value": true
+                                    },
+                                    {
+                                        "type": "origins:block",
+                                        "block": "minecraft:redstone_wall_torch"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    "radius": 1,
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                }
+            ]
+        }
+    },
+    "disable": {
+        "type": "origins:prevent_item_use",
+        "item_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:food"
+                }
+            ]
+        }
+    },
+    "name": "Battery Powered",
+    "description": "You recieve hunger by being powered by redstone however you cannot eat normal food."
+}

@@ -1,0 +1,120 @@
+{
+	"type": "origins:multiple",
+	"speed_resource": {
+		"type": "origins:resource",
+		"min": 0,
+		"max": 150,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_03.png",
+			"bar_index": 16,
+			"condition": {
+				"type": "origins:sprinting"
+			}
+		}
+	},
+	"build_up_speed": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_speed_resource",
+			"change": 1
+		},
+		"cooldown": 1,
+		"key": {
+			"key": "key.forward",
+			"continuous": true
+		},
+		"condition": {
+			"type": "origins:sprinting"
+		},
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"clear_stampede_if_standing_sill": {
+		"type": "origins:action_over_time",
+		"entity_action": {
+			"type": "origins:change_resource",
+			"resource": "*:*_speed_resource",
+			"change": -200
+		},
+		"interval": 20,
+		"condition": {
+			"type": "origins:sprinting",
+			"inverted": true
+		}
+	},
+	"speed_controller": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:resource",
+						"resource": "*:*_speed_resource",
+						"comparison": ">=",
+						"compare_to": 30
+					},
+					"if_action": {
+						"type": "origins:apply_effect",
+						"effect": {
+							"effect": "minecraft:speed",
+							"duration": 10,
+							"amplifier": 0,
+							"show_particles": false
+						}
+					}
+				},
+				{
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:resource",
+						"resource": "*:*_speed_resource",
+						"comparison": ">=",
+						"compare_to": 90
+					},
+					"if_action": {
+						"type": "origins:apply_effect",
+						"effect": {
+							"effect": "minecraft:speed",
+							"duration": 10,
+							"amplifier": 1,
+							"show_particles": false
+						}
+					}
+				},
+				{
+					"type": "origins:if_else",
+					"condition": {
+						"type": "origins:resource",
+						"resource": "*:*_speed_resource",
+						"comparison": ">=",
+						"compare_to": 150
+					},
+					"if_action": {
+						"type": "origins:apply_effect",
+						"effect": {
+							"effect": "minecraft:speed",
+							"duration": 10,
+							"amplifier": 2,
+							"show_particles": false
+						}
+					}
+				}
+			]
+		},
+		"cooldown": 1,
+		"key": {
+			"key": "key.forward",
+			"continuous": true
+		},
+		"hud_render": {
+			"should_render": false
+		}
+	},
+	"name": "Stampede",
+	"description": "You build up speed if you sprint without interuption."
+}

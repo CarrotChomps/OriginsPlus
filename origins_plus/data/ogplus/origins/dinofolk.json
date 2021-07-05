@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"ogplus:imp/carnivore",
+		"ogplus:dinofolk/egg_on_wakeup",
+		"ogplus:dinofolk/digging_claws",
+		"ogplus:dinofolk/cold_blooded",
+		"ogplus:dinofolk/reptilian_build"
+	],
+	"icon": "minecraft:green_dye",
+	"order": 1,
+	"impact": 2,
+	"name": "Dinofolk",
+	"description": "A Lizard-like Origin who are adaptive and strong."
+}

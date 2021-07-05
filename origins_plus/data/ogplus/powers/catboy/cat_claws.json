@@ -1,0 +1,31 @@
+{
+    "type": "origins:modify_damage_dealt",
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:air"
+            }
+        }
+    },
+    "self_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:sneaking"
+        },
+        "if_action": {
+            "type": "origins:play_sound",
+            "sound": "minecraft:entity.cat.hiss",
+            "volume": 0.5
+        }
+    },
+    "modifier": {
+        "name": "Extra damage when unarmed",
+        "operation": "addition",
+        "value": 3.0
+    },
+    "name": "Cat Claws",
+    "description": "You deal more damage while unarmed."
+}

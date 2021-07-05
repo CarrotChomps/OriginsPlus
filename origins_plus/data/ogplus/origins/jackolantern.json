@@ -1,0 +1,15 @@
+{
+    "powers": [
+        "ogplus:jackolantern/pumpkin_armor",
+        "ogplus:jackolantern/pumpkin_of_protection",
+        "ogplus:jackolantern/pumpkin_punch",
+        "ogplus:jackolantern/pumpkin_prof",
+        "ogplus:imp/carnivore",
+		"ogplus:ender_fairy/hydrophobic"
+    ],
+    "icon": "minecraft:jack_o_lantern",
+    "order": 1,
+    "impact": 2,
+    "name": "Jack-O Lantern",
+    "description": "A Pumpkin based origin that uses its natural power to defend and help others."
+}

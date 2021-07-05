@@ -1,0 +1,9 @@
+{
+	"type": "origins:multiple",
+	"modify_size": {
+		"type": "extraorigins:modify_size",
+		"scale": 0.75
+	},
+	"name": "Dwarf Size",
+	"description": "You are 1.5 meters tall."
+}

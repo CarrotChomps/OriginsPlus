@@ -1,0 +1,22 @@
+{
+    "type": "origins:multiple",
+    "lava": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "lava"
+        }
+    },
+    "magma": {
+        "type": "origins:invulnerability",
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "hotfloor"
+        }
+    },
+    "fire": {
+        "type": "origins:fire_immunity"
+    },
+    "name": "Fire Resistance",
+    "description": "You are immune to fire, lava and magma."
+}

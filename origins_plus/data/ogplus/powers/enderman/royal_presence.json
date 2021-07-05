@@ -1,0 +1,43 @@
+{
+    "type": "origins:multiple",
+    "team": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:execute_command",
+            "command": "team join royalty @s",
+            "permission_level": 4
+        },
+        "entity_action_respawned": {
+            "type": "origins:execute_command",
+            "command": "team join royalty @s",
+            "permission_level": 4
+        },
+        "execute_chosen_when_orb": true
+    },
+    "insurance": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "team join royalty @s",
+            "permission_level": 4
+        },
+        "interval": 120
+    },
+    "ender_dragon_immunities": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:ender_dragon"
+            }
+        },
+        "modifier": {
+            "name": "Immune to end-based damage",
+            "operation": "multiply_base",
+            "value": -1
+        }
+    },
+    "name": "Royal Presence",
+    "description": "All Creatures from the End will not attack you."
+}

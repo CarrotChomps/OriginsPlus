@@ -1,0 +1,322 @@
+{
+    "type": "origins:multiple",
+    "fall_immunity": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "fall"
+                }
+            ]
+        },
+        "self_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "pitch": 0.3,
+                    "volume": 0.1
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:cloud ~ ~0.2 ~ 0.5 0 0.5 0.1 10",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "modifier": {
+            "name": "Emergency Landing",
+            "operation": "multiply_total",
+            "value": -1
+        }
+    },
+    "lava_system": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "lava"
+                }
+            ]
+        },
+        "self_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:fire_resistance",
+                        "duration": 600,
+                        "amplifier": 0,
+                        "show_particles": false
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "pitch": 0.5,
+                    "volume": 0.2
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:cloud ~ ~1 ~ 0.5 0.5 0.5 0.1 10",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "*:robot/emergency_landing_cooldown"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:robot/emergency_landing_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "fire_system": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "inFire"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "onFire"
+                }
+            ]
+        },
+        "self_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:fire_resistance",
+                        "duration": 600,
+                        "amplifier": 0,
+                        "show_particles": false
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "pitch": 0.5,
+                    "volume": 0.2
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:cloud ~ ~1 ~ 0.5 0.5 0.5 0.1 10",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "*:robot/emergency_landing_cooldown"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:robot/emergency_landing_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:on_fire"
+                }
+            ]
+        }
+    },
+    "void_system": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "outOfWorld"
+                }
+            ]
+        },
+        "self_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:levitation",
+                        "duration": 200,
+                        "amplifier": 30,
+                        "show_particles": false
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.firework_rocket.launch",
+                    "pitch": 0.3
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:flame ~ ~1 ~ 0.5 0.5 0.5 0 10",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "*:robot/emergency_landing_cooldown"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:robot/emergency_landing_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "drowning_system": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "drown"
+                }
+            ]
+        },
+        "self_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:water_breathing",
+                        "duration": 300,
+                        "amplifier": 0,
+                        "show_particles": false
+                    }
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.generic.splash",
+                    "pitch": 0.5
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:bubble ~ ~1 ~ 0.5 0.5 0.5 0 10",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "*:robot/emergency_landing_cooldown"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "*:robot/emergency_landing_cooldown",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "generic_system": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "player"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "mob"
+                },
+                {
+                    "type": "origins:name",
+                    "name": "magic"
+                }
+            ]
+        },
+        "self_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:regeneration",
+                            "duration": 200,
+                            "amplifier": 1,
+                            "show_particles": false
+                        },
+                        {
+                            "effect": "minecraft:speed",
+                            "duration": 300,
+                            "amplifier": 1,
+                            "show_particles": false
+                        },
+                        {
+                            "effect": "minecraft:resistance",
+                            "duration": 300,
+                            "amplifier": 0,
+                            "show_particles": false
+                        }
+                    ]
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.piston.extend",
+                    "pitch": 0.3
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:magic_crit ~ ~1 ~ 0.5 0.5 0.5 0 10",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "*:robot/emergency_landing_cooldown"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:robot/emergency_landing_cooldown",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:health",
+                    "comparison": "<=",
+                    "compare_to": 10
+                }
+            ]
+        }
+    },
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 1200,
+        "hud_render": {
+            "should_render": true,
+            "bar_index": 7
+        }
+    },
+    "name": "Safety System",
+    "description": "When taking immense damage, your safety system will try to save you depending on your situation"
+}

@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"ogplus:dark_vision",
+		"ogplus:fallen/escapist",
+		"ogplus:fallen/night_boost",
+		"ogplus:fallen/smoke_bomb",
+		"origins:no_shield"
+	],
+	"icon": "minecraft:coal",
+	"order": 2,
+	"impact": 2,
+	"name": "The Fallen",
+	"description": "Far decendants of Ancient beings who gain power from the darkness."
+}

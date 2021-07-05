@@ -1,0 +1,86 @@
+{
+    "type": "origins:multiple",
+    "effect": {
+        "type": "origins:phasing",
+        "blacklist": true,
+        "render_type": "blindness",
+        "view_distance": 30,
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "origins:unphasable"
+        },
+        "phase_down_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sneaking"
+                },
+                {
+                    "type": "origins:on_block"
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "invis": {
+        "type": "origins:invisibility",
+        "render_armor": true,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "sound": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_toggle"
+            },
+            "if_action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.fire.ambient",
+                "volume": 0.5,
+                "pitch": 1
+            },
+            "else_action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.fire.extinguish",
+                "volume": 0.5,
+                "pitch": 1
+            }
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "cooldown": 20,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "cost": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:exhaust",
+            "amount": 1
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "name": "Flame Phasing §f§u(1)",
+    "description": "Toggle to turn invisible and phase through blocks however, your drain hunger when phasing and you can't turn armor invisible."
+}

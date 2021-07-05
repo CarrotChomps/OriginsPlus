@@ -1,0 +1,12 @@
+{
+    "powers": [
+        "ogplus:loki/cloak",
+        "ogplus:loki/teleport",
+        "ogplus:loki/levitate"
+    ],
+    "icon": "minecraft:golden_helmet",
+    "order": 1,
+    "impact": 2,
+    "name": "Loki",
+    "description": "A tricky origin that loves mischief and chaos."
+}

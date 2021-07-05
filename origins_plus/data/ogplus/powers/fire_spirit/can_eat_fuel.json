@@ -1,0 +1,65 @@
+{
+    "type": "origins:multiple",
+    "active": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:feed",
+                    "food": 4,
+                    "saturation": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "clear @s #ogplus:fire_fuel 1",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:block.fire.extinguish",
+                    "volume": 0.5
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:entity.generic.eat"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:smoke ~ ~2 ~ 0.25 0.5 0.25 0 5",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "key": {
+            "key": "key.attack",
+            "continuous": true
+        },
+        "cooldown": 10,
+        "hud_render": {
+            "should_render": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "tag": "ogplus:fire_fuel"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": "<",
+                    "compare_to": 20
+                }
+            ]
+        }
+    },
+    "name": "Fuel Palate",
+    "description": "Left Click with flammable logs or coals in your hand to eat them."
+}

@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"origins:vegetarian",
+		"ogplus:bloom_bovinian/nectar_diet",
+		"ogplus:bloom_bovinian/flowerly_family",
+		"ogplus:bloom_bovinian/friendly_buzz",
+		"extraorigins:green_thumb"
+	],
+	"icon": "minecraft:honey_bottle",
+	"order": 1,
+	"impact": 2,
+	"name": "Bloom Bovinian",
+	"description": "A rare variant of the Bovinian, these Moo-Bloom descended people love exploration and travel."
+}

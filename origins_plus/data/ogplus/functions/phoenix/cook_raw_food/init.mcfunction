@@ -1,0 +1,1 @@
+execute store result score @s handCount run data get entity @s SelectedItem.Count

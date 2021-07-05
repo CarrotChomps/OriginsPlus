@@ -1,0 +1,12 @@
+{
+    "powers": [
+		"origins:vegetarian",
+        "ogplus:giraffe/giraffe_build",
+        "ogplus:giraffe/eat_leaves_block"
+    ],
+    "icon": "minecraft:oak_leaves",
+    "order": 2,
+    "impact": 2,
+    "name": "Giraffe",
+    "description": "A Peaceful Origin that use their extended reach to their advantage."
+}

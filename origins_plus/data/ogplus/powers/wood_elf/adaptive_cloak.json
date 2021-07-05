@@ -1,0 +1,137 @@
+{
+    "type": "origins:multiple",
+    "effect": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:if_else_list",
+            "actions": [
+                {
+                    "condition": {
+                        "type": "origins:on_fire"
+                    },
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:fire_resistance",
+                            "amplifier": 0,
+                            "duration": 80,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:in_block",
+                        "block_condition": {
+                            "type": "origins:block",
+                            "block": "minecraft:water"
+                        }
+                    },
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:water_breathing",
+                            "amplifier": 0,
+                            "duration": 80,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:health",
+                        "comparison": "<=",
+                        "compare_to": 1
+                    },
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:resistance",
+                            "amplifier": 2,
+                            "duration": 240,
+                            "show_particles": false
+                        }
+                    }
+                },
+                {
+                    "condition": {
+                        "type": "origins:dimension",
+                        "dimension": "minecraft:overworld"
+                    },
+                    "action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:night_vision",
+                            "amplifier": 0,
+                            "duration": 240,
+                            "show_particles": false
+                        }
+                    }
+                }
+            ]
+        },
+        "interval": 1,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "sound": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_toggle"
+            },
+            "if_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:block.grass.place",
+                        "volume": 0.75,
+                        "pitch": 0.5
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "title @s actionbar {\"text\":\"ADAPTIVE CLOAK OFF\",\"color\":\"red\"}",
+                        "permission_level": 4
+                    }
+                ]
+            },
+            "else_action": {
+                "type": "origins:and",
+                "actions": [
+                    {
+                        "type": "origins:play_sound",
+                        "sound": "minecraft:block.grass.break",
+                        "volume": 0.75,
+                        "pitch": 1.5
+                    },
+                    {
+                        "type": "origins:execute_command",
+                        "command": "title @s actionbar {\"text\":\"ADAPTIVE CLOAK ON\",\"color\":\"green\"}",
+                        "permission_level": 4
+                    }
+                ]
+            }
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "name": "Adaptive Cloak §f§u(1)",
+    "description": "Activate a potion effect that depends on your surroundin. (The cloak will pick which effect is the most needed at the time)."
+}

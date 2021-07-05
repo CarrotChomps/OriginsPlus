@@ -1,0 +1,16 @@
+{
+  "type": "origins:multiple",
+  "attribute_modifiers": {
+	"type": "origins:attribute",
+	"modifiers": [
+	  {
+		"name": "Origin modifier",
+		"attribute": "generic.max_health",
+		"value": 20,
+		"operation": "addition"
+	  }
+	]
+  },
+	"name": "Nature's Construct",
+	"description": "You have double the Health of a Human."
+}

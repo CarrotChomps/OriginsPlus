@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"origins:vegetarian",
+		"ogplus:bovinian/stampede",
+		"ogplus:bovinian/conjure_milk",
+		"ogplus:bovinian/mad_moo",
+        "ogplus:flower_witch/can_eat_flora"
+	],
+	"icon": "minecraft:milk_bucket",
+	"order": 1,
+	"impact": 2,
+	"name": "Bovinian",
+	"description": "Cow-like origins that are powerful but peaceful people."
+}

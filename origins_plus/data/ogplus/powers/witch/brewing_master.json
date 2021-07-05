@@ -1,0 +1,27 @@
+{
+    "type": "origins:multiple",
+    "immunity": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:weakness",
+            "minecraft:slowness",
+            "minecraft:poison"
+        ]
+    },
+    "potion_master": {
+        "type": "origins:action_on_item_use",
+        "entity_action": {
+            "type": "origins:feed",
+            "food": 1.0,
+            "saturation": 2.0
+        },
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:potion"
+            }
+        }
+    },
+	"name": "Brewing Master",
+	"description": "You are immune to most negative potion effects and drinking potions resotres a bit of hunger."
+}

@@ -1,0 +1,62 @@
+{
+    "type": "origins:multiple",
+    "prevention": {
+        "type": "origins:prevent_block_use",
+        "block_condition": {
+            "type": "origins:in_tag",
+            "tag": "minecraft:beds"
+        },
+        "condition": {
+            "type": "origins:dimension",
+            "dimension": "minecraft:the_end"
+        }
+    },
+    "effect": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "execute as @s at @s in minecraft:the_end run spawnpoint @s ~ ~ ~ ~",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "tellraw @s {\"text\":\"Respawn point set\"}",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "cooldown": 20,
+        "key": {
+            "key": "key.use",
+            "continuous": true
+        },
+        "hud_render": {
+            "should_render": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:dimension",
+                    "dimension": "minecraft:the_end"
+                },
+                {
+                    "type": "origins:block_in_radius",
+                    "block_condition": {
+                        "type": "origins:in_tag",
+                        "tag": "minecraft:beds"
+                    },
+                    "radius": 7,
+                    "shape": "cube",
+                    "comparison": ">=",
+                    "compare_to": 1
+                }
+            ]
+        }
+    },
+    "name": "Endternal",
+    "description": "You can sleep in the end."
+}

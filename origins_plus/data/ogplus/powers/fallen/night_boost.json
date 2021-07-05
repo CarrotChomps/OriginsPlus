@@ -1,0 +1,35 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:strength",
+                    "duration": 30,
+                    "amplifier": 0,
+                    "show_icon": false,
+                    "show_particles": false
+                }
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:speed",
+                    "duration": 30,
+                    "amplifier": 0,
+                    "show_icon": false,
+                    "show_particles": false
+                }
+            }
+        ]
+    },
+    "interval": 20,
+    "condition": {
+        "type": "origins:daytime",
+        "inverted": true
+    },
+    "name": "Night Boost",
+    "description": "You are stronger during the Night."
+}

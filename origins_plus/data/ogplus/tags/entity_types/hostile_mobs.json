@@ -1,0 +1,15 @@
+{
+    "values": [
+        "#ogplus:undead",
+        "#ogplus:water_hostile",
+        "#ogplus:nether_hostile",
+        "#ogplus:raiders",
+        "#ogplus:end_mobs",
+        "wolf",
+        "bee",
+        "llama",
+        "witch",
+        "slime",
+        "wither"
+    ]
+}

@@ -1,0 +1,325 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "clear @s minecraft:glass_bottle 1",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:if_else_list",
+                "actions": [
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "taiga"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:invisibility\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "extreme_hills"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:slow_falling\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "jungle"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:poison\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "mesa"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:strength\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "plains"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:swiftness\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "savanna"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:invisibility\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "icy"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:slowness\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "the_end"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:slow_falling\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "beach"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:turtle_master\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "forest"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:strong_leaping\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "desert"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:healing\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "river"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:regeneration\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "swamp"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:harming\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "mushroom"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:strong_harming\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "nether"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:fire_resistance\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:daytime",
+                            "inverted": true
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:night_vision\"}"
+                            }
+                        }
+                    },
+                    {
+                        "condition": {
+                            "type": "origins:biome",
+                            "condition": {
+                                "type": "origins:category",
+                                "category": "none"
+                            }
+                        },
+                        "action": {
+                            "type": "origins:give",
+                            "stack": {
+                                "item": "minecraft:splash_potion",
+                                "amount": 1,
+                                "tag": "{Potion:\"minecraft:akward\"}"
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "item": "minecraft:glass_bottle"
+            }
+        }
+    },
+    "key": {
+        "key": "key.attack"
+    },
+    "cooldown": 650,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 15
+    },
+    "name": "Natural Brewing",
+    "description": "Left-Click a glass bottle to create a Splash Potion based the ingredients around you."
+}

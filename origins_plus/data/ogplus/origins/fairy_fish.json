@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"ogplus:fairy_fish/fairy_fish_flight",
+		"ogplus:fairy_fish/ocean_aura",
+		"origins:aqua_affinity",
+		"ogplus:fairy_fish/fish_diet",
+		"ogplus:fairy_fish/fairy_fish_form"
+	],
+	"icon": "minecraft:heart_of_the_sea",
+	"order": 1,
+	"impact": 2,
+	"name": "Fairy Fish",
+	"description": "Not to be associated with actual Fairies, this Fish-like Origin is the bridge between land and sea."
+}

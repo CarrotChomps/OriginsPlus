@@ -1,0 +1,91 @@
+{
+    "type": "origins:multiple",
+    "levitation": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:jump_boost",
+                        "duration": 20,
+                        "amplifier": 3,
+                        "show_icon": false,
+                        "show_particles": false
+                    }
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:speed",
+                        "duration": 20,
+                        "amplifier": 1,
+                        "show_icon": false,
+                        "show_particles": false
+                    }
+                },
+                {
+                    "type": "origins:exhaust",
+                    "amount": 0.5
+                }
+            ]
+        },
+        "interval": 20,
+        "hud_render": {
+            "should_render": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "*:*_toggle"
+                },
+                {
+                    "type": "origins:food_level",
+                    "comparison": ">",
+                    "compare_to": 6
+                }
+            ]
+        }
+    },
+    "sound": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_toggle"
+            },
+            "if_action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.note_block.flute",
+                "volume": 0.5,
+                "pitch": 1
+            },
+            "else_action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.note_block.flute",
+                "volume": 0.5,
+                "pitch": 0.5
+            }
+        },
+        "key": {
+            "key": "key.origins.primary_active"
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "name": "Jump Boost §f§u(1)",
+    "description": "Activate to gain a Jump and Speed Boost however, you can only use the jump boost when you aren't hungry."
+}

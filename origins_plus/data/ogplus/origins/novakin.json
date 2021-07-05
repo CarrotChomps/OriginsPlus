@@ -1,0 +1,13 @@
+{
+    "powers": [
+        "ogplus:fire_resistance",
+        "ogplus:novakin/gravity_resistance",
+        "ogplus:novakin/celestial_orbit",
+        "ogplus:novakin/heated_core"
+    ],
+    "icon": "minecraft:nether_star",
+    "order": 1,
+    "impact": 2,
+    "name": "Novakin",
+    "description": "Sometimes called Kings of the Sky, this advance origin has history that goes as far back as the creation of Stars."
+}

@@ -1,0 +1,16 @@
+{
+    "type": "origins:multiple",
+    "attribute_modifiers": {
+      "type": "origins:attribute",
+      "modifiers": [
+        {
+          "name": "Origin modifier",
+          "attribute": "generic.max_health",
+          "value": 4,
+          "operation": "addition"
+        }
+      ]
+    },
+      "name": "Reptilian Defenses",
+      "description": "You have 2 more hearts than a Human."
+  }

@@ -1,0 +1,50 @@
+{
+	"type": "origins:multiple",
+	"modify_size": {
+		"type": "extraorigins:modify_size",
+		"scale": 0.6
+	},
+	"attribute_modifiers": {
+		"type": "origins:attribute",
+		"modifiers": [
+			{
+				"name": "Origin modifier",
+				"attribute": "generic.max_health",
+				"value": -4,
+				"operation": "addition"
+			},
+			{
+				"name": "Origin modifier",
+				"attribute": "generic.attack_speed",
+				"value": 0.5,
+				"operation": "addition"
+			},
+			{
+				"name": "Origin modifier",
+				"attribute": "generic.movement_speed",
+				"value": -0.015,
+				"operation": "addition"
+			},
+			{
+				"name": "Origin modifier",
+				"attribute": "reach-entity-attributes:attack_range",
+				"value": -0.25,
+				"operation": "addition"
+			}
+		]
+	},
+	"damage_reduction": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:name",
+			"name": "fall"
+		},
+		"modifier": {
+			"name": "Fall Resistance",
+			"operation": "addition",
+			"value": -10
+		}
+	},
+	"name": "Bunny Size",
+	"description": "You are 0.6 meters tall, Have 2 less hearts than a Human, and can't attack as far. However you take less damage from falling."
+}

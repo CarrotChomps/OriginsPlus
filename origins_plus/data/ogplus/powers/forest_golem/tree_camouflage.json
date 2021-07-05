@@ -1,0 +1,37 @@
+{
+	"type": "origins:multiple",
+	"invisibility": {
+		"type": "origins:invisibility",
+		"render_armor": false,
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:block_in_radius",
+					"block_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:logs"
+					},
+					"radius": 5,
+					"comparison": ">=",
+					"compare_to": 4
+				},
+				{
+					"type": "origins:sneaking"
+				},
+				{
+					"type": "origins:block_in_radius",
+					"block_condition": {
+						"type": "origins:in_tag",
+						"tag": "minecraft:leaves"
+					},
+					"radius": 5,
+					"comparison": ">=",
+					"compare_to": 50
+				}
+			]
+		}
+	},
+	"name": "Tree Camouflage",
+	"description": "As long as you are near a type of tree, you can turn invisible when crouching."
+}

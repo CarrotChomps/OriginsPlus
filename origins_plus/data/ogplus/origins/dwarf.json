@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"ogplus:dwarf/dwarf_size",
+		"ogplus:dwarf/hasty_miner",
+		"ogplus:dwarf/can_eat_stone",
+		"ogplus:dwarf/cave_vision",
+		"ogplus:dwarf/tough_skin"
+	],
+	"icon": "minecraft:iron_pickaxe",
+	"order": 1,
+	"impact": 2,
+	"name": "Dwarf",
+	"description": "Natural Cave Dwellers, these guys really dig it."
+}

@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"ogplus:wisp/fire_flight",
+		"ogplus:wisp/fire_particle",
+		"ogplus:wisp/rain_damage",
+		"ogplus:wisp/flame_phase"
+	],
+	"icon": "minecraft:lantern",
+	"order": 1,
+	"impact": 2,
+	"name": "Will o' Wisp",
+	"description": "A unique origin that actually has ties with the Phantom Origin. They use the power of fire to phase, float and hide magically."
+}

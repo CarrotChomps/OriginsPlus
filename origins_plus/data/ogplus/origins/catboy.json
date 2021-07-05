@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"ogplus:catboy/fish_diet",
+		"ogplus:catboy/cat_size",
+		"origins:scare_creepers",
+		"ogplus:catboy/cat_claws",
+		"ogplus:catboy/natural_fisher",
+        "origins:fall_immunity",
+		"ogplus:catboy/toggle_jump_boost"
+	],
+	"icon": "minecraft:tropical_fish",
+	"order": 1,
+	"impact": 2,
+	"name": "Catboy (Tabaxi)",
+	"description": "A Feline-like Origin who enjoy eating fish and adventuring."
+}

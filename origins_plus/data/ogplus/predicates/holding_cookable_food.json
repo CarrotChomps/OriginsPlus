@@ -1,0 +1,6 @@
+{
+    "condition": "minecraft:match_tool",
+    "predicate": {
+        "tag": "ogplus:cookable_food"
+    }
+}

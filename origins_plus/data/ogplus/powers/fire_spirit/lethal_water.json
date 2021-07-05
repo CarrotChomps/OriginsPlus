@@ -1,0 +1,60 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "gamerule showDeathMessages false",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "tellraw @a [{\"selector\":\"@s\"},{\"text\":\" was put out\"}]",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:large_smoke ~ ~1 ~ 0.5 0.5 0.5 0.1 10",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.fire.extinguish"
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "kill @s",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "gamerule showDeathMessages true",
+                "permission_level": 4
+            }
+        ]
+    },
+    "interval": 20,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:fluid_height",
+                "fluid": "minecraft:water",
+                "comparison": "==",
+                "compare_to": 0,
+                "inverted": true
+            },
+            {
+                "type": "origins:enchantment",
+                "enchantment": "origins:water_protection",
+                "calculation": "sum",
+                "comparison": ">=",
+                "compare_to": 1,
+                "inverted": true
+            }
+        ]
+    },
+    "name": "Aquatic Combustion",
+    "description": "You burn out if you step in water."
+}

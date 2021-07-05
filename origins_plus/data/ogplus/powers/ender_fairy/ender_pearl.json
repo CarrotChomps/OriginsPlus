@@ -1,0 +1,18 @@
+{
+    "type": "origins:fire_projectile",
+    "cooldown": 600,
+    "hud_render": {
+      "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+      "bar_index": 11
+    },
+    "entity_type": "origins:enderian_pearl",
+    "sound": "minecraft:entity.ender_pearl.throw",
+    "speed": 1.5,
+    "divergence": 1,
+    "key": {
+      "key": "key.origins.primary_active",
+      "continuous": false
+    },
+    "name": "Ender Pearl Throw §f§u(1)",
+    "description": "Throw an  Ender Pearl."
+  }

@@ -1,0 +1,53 @@
+{
+    "type": "origins:multiple",
+    "kill_effect": {
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:heal",
+                    "amount": 4.0
+                },
+                {
+                    "type": "origins:feed",
+                    "food": 4,
+                    "saturation": 4
+                },
+                {
+                    "type": "origins:if_else",
+                    "condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:health",
+                                "comparison": "==",
+                                "compare_to": 20
+                            },
+                            {
+                                "type": "origins:food_level",
+                                "comparison": "==",
+                                "compare_to": 20
+                            }
+                        ]
+                    },
+                    "if_action": {
+                        "type": "origins:apply_effect",
+                        "effect": {
+                            "effect": "minecraft:absorption",
+                            "duration": 1200,
+                            "amplifier": 0,
+                            "show_particles": false
+                        }
+                    }
+                }
+            ]
+        },
+        "cooldown": 10,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "name": "Absorbing Nutrients",
+    "description": "Killing Mobs heal and restore hunger. If you are fully healed then you recieve absorption hearts instead."
+}

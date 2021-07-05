@@ -1,0 +1,37 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.cow.hurt"
+			},
+			{
+				"type": "origins:apply_effect",
+				"effects": [
+					{
+						"effect": "minecraft:strength",
+						"duration": 600,
+						"amplifier": 0,
+						"show_particles": false
+					},
+					{
+						"effect": "minecraft:weakness",
+						"duration": 800,
+						"amplifier": 0,
+						"show_particles": false
+					}
+				]
+			}
+		]
+	},
+	"cooldown": 1200,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+		"bar_index": 23
+	},
+	"name": "Mad Moo §f§u(1)",
+	"description": "Activate to deal increased damage, but then have weakness afterwards."
+}

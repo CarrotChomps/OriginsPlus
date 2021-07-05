@@ -1,0 +1,27 @@
+{
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 20,
+    "duration_per_stack": 10,
+    "effects": [
+        {
+            "effect": "minecraft:haste",
+            "amplifier": 1,
+            "show_particles": false,
+            "show_icon": false
+        }
+    ],
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+                "tag": "ogplus:pickaxe"
+            }
+        }
+    },
+    "name": "Faster Mining",
+    "description": "You mine faster with a pickaxe.",
+    "hidden": true
+}

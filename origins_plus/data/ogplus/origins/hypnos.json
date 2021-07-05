@@ -1,0 +1,15 @@
+{
+    "powers": [
+        "ogplus:hypnos/hypnos_build",
+        "ogplus:hypnos/rest",
+        "ogplus:hypnos/snore",
+        "ogplus:hypnos/thick_fat",
+        "ogplus:hypnos/leftovers",
+        "ogplus:hypnos/bouncy_belly"
+    ],
+    "icon": "minecraft:red_bed",
+    "order": 1,
+    "impact": 2,
+    "name": "Hypnos",
+    "description": "A slow, mild origin that tends to spend its time lazing around... unless its hungry."
+}

@@ -1,0 +1,12 @@
+{
+    "powers": [
+        "ogplus:gorgon/petrifying_gaze",
+        "ogplus:imp/carnivore",
+        "ogplus:gorgon/evolved_reaction"
+    ],
+    "icon": "minecraft:leather",
+    "order": 2,
+    "impact": 2,
+    "name": "Gorgon",
+    "description": "A Powerful Origin that uses their monstor like traits to their abilities."
+}

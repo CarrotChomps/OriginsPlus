@@ -1,0 +1,19 @@
+{
+    "values": [
+        "minecraft:stone",
+        "minecraft:cobblestone",
+        "minecraft:mossy_cobblestone",
+        "minecraft:diorite",
+        "minecraft:granite",
+        "minecraft:andesite",
+        "minecraft:gravel",
+        "minecraft:bedrock",
+        "minecraft:dirt",
+        "minecraft:basalt",
+        "minecraft:blackstone",
+        "minecraft:end_stone",
+        "minecraft:sandstone",
+        "minecraft:smooth_sandstone",
+        "minecraft:chiseled_sandstone"
+    ]
+}

@@ -1,0 +1,1 @@
+effect give @s luck 30 2

@@ -1,0 +1,16 @@
+{
+    "type": "origins:prevent_sleep",
+    "message": "You must sleep in a higher place.",
+    "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:height",
+                "comparison": "<",
+                "compare_to": 100
+            }
+        ]
+    },
+    "name": "Cloud Sleeper",
+    "description": "You can only sleep above y = 100 since you like being near the clouds."
+}

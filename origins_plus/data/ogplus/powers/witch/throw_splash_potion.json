@@ -1,0 +1,18 @@
+{
+    "type": "origins:fire_projectile",
+    "entity_type": "minecraft:potion",
+    "cooldown": 200,
+    "speed": 0.5,
+    "divergence": 1,
+    "hud_render": {
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 19,
+        "should_render": true
+    },
+    "tag": "{Item:{id:\"minecraft:splash_potion\",Count:1b,tag:{Potion:\"minecraft:weakness\",CustomPotionColor:7798983,CustomPotionEffects:[{Id:2b,Amplifier:0b,Duration:20},{Id:19b,Amplifier:0b,Duration:20}]}}}",
+    "key": {
+        "key": "key.origins.primary_active"
+    },
+    "name": "Splash Potion of Meanieness §f§u(1)",
+    "description": "Throw a splash potion that slows and poisons upon impact."
+}

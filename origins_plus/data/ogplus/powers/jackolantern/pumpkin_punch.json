@@ -1,0 +1,54 @@
+{
+    "type": "origins:target_action_on_hit",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:add_velocity",
+                "y": 0.5
+            },
+            {
+                "type": "origins:add_velocity",
+                "space": "local",
+                "z": -0.5
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "playsound minecraft:entity.generic.explode voice @a[distance=..7] ~ ~ ~ 0.75 2",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "particle minecraft:explosion ~ ~0.5 ~ 0.2 0.2 0.2 0 3 normal",
+                "permission_level": 4
+            }
+        ]
+    },
+    "cooldown": 200,
+    "hud_render": {
+        "should_render": true,
+        "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+        "bar_index": 13
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "mainhand",
+                "item_condition": {
+                    "type": "origins:ingredient",
+                    "ingredient": {
+                        "item": "minecraft:air"
+                    }
+                }
+            },
+            {
+                "type": "origins:sneaking",
+                "inverted": true
+            }
+        ]
+    },
+    "name": "Pumpkin Punch",
+    "description": "Your punches cause an explosion on the targets feet. Crouching disables this effect."
+}

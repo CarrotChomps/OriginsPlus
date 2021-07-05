@@ -1,0 +1,117 @@
+{
+    "type": "origins:multiple",
+    "respawn": {
+        "type": "origins:prevent_death",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:phoenix/rebirth_resource",
+                    "change": -1800
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.5 0.5 0.1 10",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:play_sound",
+                    "sound": "minecraft:item.totem.use",
+                    "volume": 0.5
+                },
+                {
+                    "type": "origins:clear_effect"
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:speed",
+                            "amplifier": 1,
+                            "duration": 600
+                        },
+                        {
+                            "effect": "minecraft:regeneration",
+                            "amplifier": 5,
+                            "duration": 80
+                        },
+                        {
+                            "effect": "minecraft:strength",
+                            "amplifier": 0,
+                            "duration": 600
+                        },
+                        {
+                            "effect": "minecraft:weakness",
+                            "amplifier": 0,
+                            "duration": 600
+                        }
+                    ]
+                }
+            ]
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:in_rain",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:phoenix/rebirth_resource",
+                    "comparison": ">=",
+                    "compare_to": 1799
+                }
+            ]
+        }
+    },
+    "charge": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "*:phoenix/rebirth_resource",
+            "change": 1
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:in_rain",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "*:phoenix/rebirth_resource",
+                    "comparison": "<=",
+                    "compare_to": 1800
+                }
+            ]
+        }
+    },
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 1800,
+        "start_value": 1800,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 3
+        }
+    },
+    "name": "Rebirth",
+    "description": "Respawn upon death..."
+}

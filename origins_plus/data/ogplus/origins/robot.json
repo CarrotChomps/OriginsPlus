@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"ogplus:robot/charge",
+		"ogplus:robot/rocket_boost",
+		"ogplus:robot/shoot_laser",
+		"ogplus:robot/emergency_landing"
+	],
+	"icon": "minecraft:redstone",
+	"order": 1,
+	"impact": 2,
+	"name": "Cyborg",
+	"description": "This origin is known to use its advance integrated technology for many situations; making it a very useful companion."
+}

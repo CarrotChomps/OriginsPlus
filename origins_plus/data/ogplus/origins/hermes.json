@@ -1,0 +1,15 @@
+{
+    "powers": [
+        "ogplus:hermes/god_speed",
+        "ogplus:hermes/tailwind",
+        "ogplus:hermes/combat_cooldown",
+        "ogplus:hermes/cloud_sleeper",
+        "ogplus:hermes/hermes_build",
+        "ogplus:hermes/fast_food"
+    ],
+    "icon": "minecraft:feather",
+    "order": 1,
+    "impact": 2,
+    "name": "Hermes",
+    "description": "An energetic origin that loves traveling around and conversing with others."
+}

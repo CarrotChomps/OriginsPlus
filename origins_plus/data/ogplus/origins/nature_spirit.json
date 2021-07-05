@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"ogplus:nature_spirit/seed_diet",
+		"ogplus:nature_spirit/absorb_nutrients",
+		"ogplus:nature_spirit/flower_flutter",
+		"ogplus:nature_spirit/natural_invis",
+		"extraorigins:green_thumb"
+	],
+	"icon": "minecraft:grass",
+	"order": 1,
+	"impact": 2,
+	"name": "Nature Spirit",
+	"description": "An Origin that is known for its grace as well as its power; just like Nature itself."
+}

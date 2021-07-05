@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"ogplus:garden_fairy/form_change",
+		"ogplus:fairy/fairy_form",
+		"ogplus:fairy/fairy_flight"
+	],
+	"icon": "minecraft:peony",
+	"order": 1,
+	"impact": 2,
+	"name": "Garden Fairy",
+	"description": "Infused with Magic, this variant of Fairy cares for natures and those that live in it."
+}

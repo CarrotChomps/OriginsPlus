@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"ogplus:elven_build",
+        "ogplus:high_elf/mana",
+        "ogplus:high_elf/levitate",
+        "ogplus:high_elf/high",
+        "ogplus:high_elf/invis"
+	],
+	"icon": "minecraft:purple_concrete",
+	"order": 1,
+	"impact": 2,
+	"name": "High-Elf",
+	"description": "A sophisticated variant of Elves that utilize tactics and strategy."
+}

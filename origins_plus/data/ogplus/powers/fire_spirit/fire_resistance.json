@@ -1,0 +1,19 @@
+{
+    "type": "origins:multiple",
+    "lava_resistance": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:fire_resistance",
+                "duration": 100,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": false
+            }
+        },
+        "interval": 60
+    },
+    "name": "Fire Resistance",
+    "description": "You have passive fire resistance."
+}

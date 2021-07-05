@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"ogplus:fish/fish_breathing",
+		"ogplus:fish/fish_boost",
+		"ogplus:fish/can_eat_kelp",
+		"origins:aqua_affinity",
+		"ogplus:fish/fish_swim_speed"
+	],
+	"icon": "minecraft:salmon",
+	"order": 2,
+	"impact": 2,
+	"name": "Fish",
+	"description": "Return to Fish..."
+}

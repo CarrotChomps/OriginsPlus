@@ -1,0 +1,20 @@
+{
+	"type": "origins:multiple",
+	"modify_size": {
+		"type": "extraorigins:modify_size",
+		"scale": 0.25
+	},
+	"attribute_modifiers": {
+		"type": "origins:attribute",
+		"modifiers": [
+			{
+				"name": "Origin modifier",
+				"attribute": "generic.max_health",
+				"value": -10,
+				"operation": "addition"
+			}
+		]
+	},
+	"name": "Fairy Fish Size",
+	"description": "You are a 0.25m tall and have 5 less hearts than a human."
+}

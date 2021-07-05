@@ -1,0 +1,15 @@
+{
+    "powers": [
+        "ogplus:forged/forged_construct",
+        "ogplus:forged/impervious_iron",
+		"origins:aqua_affinity",
+        "ogplus:forged/living_steel",
+        "ogplus:forged/cant_float"
+    ],
+    "icon": "minecraft:iron_ingot",
+    "order": 1,
+	"unchoosable": true,
+    "impact": 3,
+    "name": "Forged",
+    "description": "Forged are made from magical tinkering, they can feel pain and emotion. Built to defy life, they must now find a purpose."
+}

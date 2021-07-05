@@ -1,0 +1,33 @@
+{
+    "type": "origins:action_on_item_use",
+    "entity_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:block.beacon.activate"
+            },
+            {
+                "type": "origins:apply_effect",
+                "effect": {
+                    "effect": "minecraft:absorption",
+                    "amplifier": 1,
+                    "duration": 600
+                }
+            }
+        ]
+    },
+    "item_condition": {
+        "type": "origins:food",
+        "ingredients": [
+            {
+                "item": "minecraft:golden_apple"
+            },
+            {
+                "item": "minecraft:golden_carrot"
+            }
+        ]
+    },
+    "name": "Holy Healing",
+    "description": "Consuming Potions or Golden Foods gives you a temporary absorption effect."
+}

@@ -1,0 +1,36 @@
+{
+    "type": "origins:active_self",
+    "entity_action": {
+        "type": "origins:if_else",
+        "condition": {
+            "type": "origins:equipped_item",
+            "equipment_slot": "mainhand",
+            "item_condition": {
+                "type": "origins:ingredient",
+                "ingredient": {
+                    "item": "minecraft:air"
+                }
+            }
+        },
+        "if_action": {
+            "type": "origins:execute_command",
+            "command": "tag @s add silk_touch",
+            "permission_level": 4
+        },
+        "else_action": {
+            "type": "origins:execute_command",
+            "command": "tag @s remove silk_touch",
+            "permission_level": 4
+        }
+    },
+    "cooldown": 5,
+    "hud_render": {
+        "should_render": false
+    },
+    "key": {
+        "key": "key.attack",
+        "continuous": true
+    },
+    "name": "Natural Builder",
+    "description": "You can Silk Touch blocks with an empty hand."
+}

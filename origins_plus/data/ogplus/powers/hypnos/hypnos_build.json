@@ -1,0 +1,44 @@
+{
+    "type": "origins:multiple",
+    "modify_width": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:width 1.1",
+            "permission_level": 4
+        }
+    },
+    "fix_width_on_callback": {
+        "type": "origins:action_on_callback",
+        "entity_action_removed": {
+            "type": "origins:execute_command",
+            "command": "scale reset",
+            "permission_level": 4
+        }
+    },
+    "attribute_modifiers": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "name": "Origin modifier",
+                "attribute": "minecraft:generic.attack_speed",
+                "value": -1,
+                "operation": "addition"
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "minecraft:generic.movement_speed",
+                "value": -0.01,
+                "operation": "addition"
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "minecraft:generic.knockback_resistance",
+                "value": 1,
+                "operation": "addition"
+            }
+        ]
+    },
+    "name": "Sleeply Stature",
+    "description": "You have are wider than normal humans, walk slower and mine slower."
+}

@@ -1,0 +1,9 @@
+{
+    "values": [
+        "minecraft:bedrock",
+        "minecraft:nether_portal",
+        "minecraft:end_portal",
+        "gravestones:gravestone",
+        "minecraft:end_gateway"
+    ]
+}

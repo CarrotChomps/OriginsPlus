@@ -1,0 +1,18 @@
+{
+    "powers": [
+        "ogplus:phoenix/fortress_spawn",
+        "ogplus:phoenix/fire_boost",
+        "ogplus:phoenix/rebirth",
+        "ogplus:phoenix/shoot_fire",
+        "ogplus:phoenix/phoenix_flight",
+        "ogplus:fire_resistance",
+        "ogplus:phoenix/mystical_physiology",
+        "ogplus:phoenix/cook_raw_food",
+        "ogplus:phoenix/can_eat_blaze_powder"
+    ],
+    "icon": "minecraft:magma_cream",
+    "order": 1,
+    "impact": 2,
+    "name": "Phoenix",
+    "description": "An ancient Origin that rules the Nether with its magic and power."
+}

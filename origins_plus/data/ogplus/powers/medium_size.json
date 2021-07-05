@@ -1,0 +1,46 @@
+{
+	"type": "origins:multiple",
+	"modify_size": {
+		"type": "extraorigins:modify_size",
+		"scale": 0.75
+	},
+	"attribute_modifiers": {
+		"type": "origins:attribute",
+		"modifiers": [
+			{
+				"name": "Origin modifier",
+				"attribute": "generic.max_health",
+				"value": -4,
+				"operation": "addition"
+			},
+			{
+				"name": "Origin modifier",
+				"attribute": "generic.attack_speed",
+				"value": 0.5,
+				"operation": "addition"
+			},
+			{
+				"name": "Origin modifier",
+				"attribute": "generic.movement_speed",
+				"value": -0.015,
+				"operation": "addition"
+			},
+			{
+				"name": "Origin modifier",
+				"attribute": "reach-entity-attributes:attack_range",
+				"value": -0.25,
+				"operation": "addition"
+			}
+		]
+	},
+	"jump_modifier": {
+		"type": "origins:modify_jump",
+		"modifier": {
+			"name": "Origin modifier",
+			"value": 0,
+			"operation": "multiply_total"
+		}
+	},
+	"name": "Medium Size",
+	"description": "You are 1.5 meters tall, Have 2 less hearts than a Human, and can't attack as far."
+}

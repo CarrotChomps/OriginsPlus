@@ -1,0 +1,26 @@
+{
+    "type": "origins:multiple",
+    "effect": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "name": "Serpent Speed",
+            "attribute": "minecraft:generic.movement_speed",
+            "value": 0.75,
+            "operation": "multiply_base"
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "*:*_toggle"
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": true,
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "name": "Serpent Speed §f§u(2)",
+    "description": "Toggle to increase movement speed."
+}

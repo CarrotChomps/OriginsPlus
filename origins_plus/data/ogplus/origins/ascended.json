@@ -1,0 +1,15 @@
+{
+    "powers": [
+        "origins:more_kinetic_damage",
+        "origins:light_armor",
+        "origins:launch_into_air",
+        "origins:elytra",
+        "ogplus:ascended/infernal_allergy",
+        "ogplus:ascended/holy_healing"
+    ],
+    "icon": "minecraft:gold_ingot",
+    "order": 2,
+    "impact": 2,
+    "name": "The Ascended",
+    "description": "Far decendants of Ancient beings who gain power from the light."
+}

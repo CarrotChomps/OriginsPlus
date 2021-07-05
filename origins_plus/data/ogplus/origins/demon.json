@@ -1,0 +1,15 @@
+{
+	"powers": [
+		"ogplus:demon/dimension_dive",
+		"ogplus:demon/demonic_float",
+		"ogplus:demon/inferno_trident",
+		"ogplus:fire_resistance",
+		"ogplus:demon/walk_on_lava",
+		"ogplus:demon/soul_steal"
+	],
+	"icon": "minecraft:redstone",
+	"order": 1,
+	"impact": 2,
+	"name": "Demon",
+	"description": "A Powerful Origin who taps into the dimensions for their benefit."
+}

@@ -1,0 +1,12 @@
+{
+    "powers": [
+        "ogplus:witch/brewing_master",
+        "ogplus:witch/throw_splash_potion",
+        "ogplus:witch/healing_on_hit"
+    ],
+    "icon": "minecraft:potion",
+    "order": 1,
+    "impact": 2,
+    "name": "Witch",
+    "description": "Masters of brewing and chaos, its best to say on their nice side when it comes to many things."
+}

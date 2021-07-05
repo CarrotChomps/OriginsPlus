@@ -1,0 +1,14 @@
+{
+    "powers": [
+        "ogplus:panda/fake_vegetarian",
+        "ogplus:panda/can_eat_bamboo",
+        "ogplus:panda/fluffy",
+        "ogplus:panda/panda_punch",
+        "ogplus:panda/natural_climber"
+    ],
+    "icon": "minecraft:bamboo",
+    "order": 1,
+    "impact": 2,
+    "name": "Panda People",
+    "description": "A fluffy Origin that likes to spend their free time eating Bamboo and climbing."
+}

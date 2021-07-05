@@ -1,0 +1,26 @@
+{
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:fire"
+            },
+            {
+                "type": "origins:name",
+                "name": "fall"
+            },
+            {
+                "type": "origins:name",
+                "name": "hotFloor"
+            }
+        ]
+    },
+    "modifier": {
+        "name": "Built Different",
+        "operation": "addition",
+        "value": -4
+    },
+    "name": "Built Different",
+    "description": "You take less damage from Lava and Fall Damage."
+}

@@ -1,0 +1,40 @@
+{
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 200,
+        "start_value": 200,
+        "hud_render": {
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 4
+        }
+    },
+    "frost_controller": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "*:frozen_tomato/frost_resource",
+                    "change": 5
+                }
+            ]
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:resource",
+                    "resource": "*:*/frost_resource",
+                    "comparison": "<",
+                    "compare_to": 200
+                }
+            ]
+        }
+    },
+	"name": "Frost",
+	"description": "Your abilities run on a unique resource known as Frost, Frost regenerates when you aren't using any abilities."
+}

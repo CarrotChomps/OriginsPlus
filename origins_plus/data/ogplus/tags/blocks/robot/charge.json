@@ -1,0 +1,10 @@
+{
+    "values": [
+        "minecraft:repeater",
+        "minecraft:comparator",
+        "minecraft:observer",
+        "minecraft:lever",
+        "#minecraft:pressure_plates",
+        "#minecraft:buttons"
+    ]
+}

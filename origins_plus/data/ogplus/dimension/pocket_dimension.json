@@ -1,0 +1,27 @@
+{
+    "type": "ogplus:nowhere",
+    "name": "pocket_dimension",
+    "natural": false,
+    "generator": {
+        "type": "flat",
+        "settings": {
+            "layers": [
+                {
+                    "block": "minecraft:bedrock",
+                    "height": 4
+                },
+                {
+                    "block": "minecraft:blackstone",
+                    "height": 5
+                }
+            ],
+            "biome": "minecraft:the_void",
+            "lakes": false,
+            "features": false,
+            "structures": {
+                "structures": {}
+            }
+        },
+        "seed": 0
+    }
+}

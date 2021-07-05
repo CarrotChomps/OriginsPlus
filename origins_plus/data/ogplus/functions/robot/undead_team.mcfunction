@@ -1,0 +1,10 @@
+execute if entity @s[type=husk] run team join undead @s
+execute if entity @s[type=drowned] run team join undead @s
+execute if entity @s[type=phantom] run team join undead @s
+execute if entity @s[type=zombie] run team join undead @s
+execute if entity @s[type=skeleton] run team join undead @s
+execute if entity @s[type=skeleton_horse] run team join undead @s
+execute if entity @s[type=zoglin] run team join undead @s
+execute if entity @s[type=zombie_horse] run team join undead @s
+execute if entity @s[type=zombie_villager] run team join undead @s
+execute if entity @s[type=wither_skeleton] run team join undead @s

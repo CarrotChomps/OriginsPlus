@@ -1,0 +1,37 @@
+{
+    "type": "origins:multiple",
+    "fireball": {
+        "type": "origins:fire_projectile",
+        "entity_type": "minecraft:small_fireball",
+        "cooldown": 200,
+        "count": 3,
+        "divergence": 2,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 5
+        },
+        "speed": 0.2,
+        "key": {
+            "key": "key.origins.secondary_active",
+            "continuous": false
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": "==",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:in_rain",
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "name": "Blaze Blast §f§u(2)",
+    "description": "Activate to launch 3 small fireballs."
+}

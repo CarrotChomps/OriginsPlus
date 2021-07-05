@@ -1,0 +1,56 @@
+{
+    "type": "origins:multiple",
+    "modify_size": {
+        "type": "extraorigins:modify_size",
+        "scale": 1.5
+    },
+    "modify_width": {
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:width 0.85",
+            "permission_level": 4
+        }
+    },
+    "fix_width_on_callback": {
+        "type": "origins:action_on_callback",
+        "entity_action_removed": {
+            "type": "origins:execute_command",
+            "command": "scale reset",
+            "permission_level": 4
+        }
+    },
+    "attribute_modifiers": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "name": "Origin modifier",
+                "attribute": "generic.max_health",
+                "value": 10,
+                "operation": "addition"
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "reach-entity-attributes:reach",
+                "value": 1,
+                "operation": "addition"
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "reach-entity-attributes:attack_range",
+                "value": 1,
+                "operation": "addition"
+            }
+        ]
+    },
+    "jump_modifier": {
+        "type": "origins:modify_jump",
+        "modifier": {
+            "name": "Origin modifier",
+            "value": 0,
+            "operation": "addition"
+        }
+    },
+    "name": "Enderian Build",
+    "description": "You are 3m tall, have 5 more hearts than a Human, and have an extended reach."
+}

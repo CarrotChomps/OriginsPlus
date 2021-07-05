@@ -1,0 +1,11 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:execute_command",
+        "command": "execute as @e[type=bee,distance=..7] run data merge entity @s {AngerTime:0}",
+        "permission_level": 4
+    },
+    "interval": 20,
+    "name": "Friendly Buzz",
+    "description": "Your presence has a chance to calm nearby Bees."
+}

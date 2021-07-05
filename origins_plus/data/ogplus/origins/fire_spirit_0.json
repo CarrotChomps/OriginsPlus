@@ -1,0 +1,16 @@
+{
+    "powers": [
+        "ogplus:fire_spirit/fire_resistance",
+        "ogplus:fire_spirit/can_eat_fuel",
+        "ogplus:phoenix/cook_raw_food",
+        "ogplus:fire_spirit/lethal_water",
+        "ogplus:fire_spirit/shoot_fireball",
+        "ogplus:fire_spirit/hot_hands",
+        "ogplus:fire_spirit/raging_inferno"
+    ],
+    "icon": "minecraft:blaze_rod",
+    "order": 2,
+    "impact": 2,
+    "name": "Fire Spirit",
+    "description": "Ancient beings that use fire for their own benefit."
+}

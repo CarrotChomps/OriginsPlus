@@ -1,0 +1,27 @@
+{
+    "type": "origins:multiple",
+    "fire_resistance": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:name",
+                    "name": "fire"
+                },
+                {
+    
+                    "type": "origins:name",
+                    "name": "lava"
+                }
+            ]
+        },
+        "modifier": {
+            "name": "Thick Fat",
+            "operation": "addition",
+            "value": -1
+        }
+    },
+    "name": "Thick Fat",
+    "description": "You take less damage from fire."
+}

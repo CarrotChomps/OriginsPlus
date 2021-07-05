@@ -1,0 +1,22 @@
+{
+    "type": "origins:modify_break_speed",
+    "block_condition": {
+        "type": "origins:in_tag",
+        "tag": "ogplus:pumpkin"
+    },
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 4
+    },
+    "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+            "type": "origins:harvest_level",
+            "comparison": "==",
+            "compare_to": 0
+        }
+    },
+    "name": "Pumpkin Proficiency",
+    "description": "You break pumpkins faster with your hands."
+}

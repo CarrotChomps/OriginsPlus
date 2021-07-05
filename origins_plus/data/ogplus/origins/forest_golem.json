@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"ogplus:forest_golem/natures_construct",
+		"extraorigins:flammable",
+		"extraorigins:photosynthesis",
+		"ogplus:forest_golem/leather_armor_only",
+		"ogplus:forest_golem/leaf_lift",
+		"ogplus:forest_golem/can_eat_dirt",
+		"ogplus:forest_golem/forest_ward"
+	],
+	"icon": "minecraft:oak_sapling",
+	"order": 2,
+	"impact": 2,
+	"name": "Forest Golem",
+	"description": "Guardians of the Forests, these Golems are one with nature and those that are a part of it."
+}

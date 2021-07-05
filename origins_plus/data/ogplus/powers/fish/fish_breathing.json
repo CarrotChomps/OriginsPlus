@@ -1,0 +1,16 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:conduit_power",
+          "duration": 120,
+          "amplifier": 0,
+          "show_icon": false,
+          "show_particles": false
+        }
+    },
+    "interval": 60,
+    "name": "Special Gills",
+    "description": "You can breathe on land and underwater."
+}

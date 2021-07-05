@@ -1,0 +1,53 @@
+{
+    "type": "origins:multiple",
+    "team": {
+        "type": "origins:action_on_callback",
+        "entity_action_chosen": {
+            "type": "origins:execute_command",
+            "command": "team join iron_golem @s",
+            "permission_level": 4
+        },
+        "entity_action_respawned": {
+            "type": "origins:execute_command",
+            "command": "team join iron_golem @s",
+            "permission_level": 4
+        },
+        "execute_chosen_when_orb": true
+    },
+    "insurance": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "team join iron_golem @s",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "function ogplus:iron_golem/village_accustomed/village_benefit",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "interval": 600
+    },
+    "zombie_villager_immunities": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:attacker",
+            "entity_condition": {
+                "type": "origins:entity_type",
+                "entity_type": "minecraft:zombie_villager"
+            }
+        },
+        "modifier": {
+            "name": "Immune to end-based damage",
+            "operation": "multiply_base",
+            "value": -1
+        }
+    },
+    "name": "Villager Accuomsted",
+    "description": "Iron Golems and Villagers gain benefits when you are around."
+}

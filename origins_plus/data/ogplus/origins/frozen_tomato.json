@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"ogplus:frozen_tomato/frost",
+		"ogplus:frozen_tomato/snow_vine",
+		"ogplus:frozen_tomato/frozenball",
+		"ogplus:frozen_tomato/can_eat_snowball",
+		"ogplus:dwarf/dwarf_size"
+	],
+	"icon": "minecraft:snowball",
+	"order": 1,
+	"impact": 2,
+	"name": "Frozen Tomato",
+	"description": "Originated in the Snowy Tundra, this frozen flora uses the power of ice and plants to help them out."
+}

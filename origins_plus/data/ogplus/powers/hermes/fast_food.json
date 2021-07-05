@@ -1,0 +1,27 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:feed",
+        "food": 1,
+        "saturation": 1
+    },
+    "interval": 20,
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:on_block"
+            },
+            {
+                "type": "origins:sprinting"
+            },
+            {
+                "type": "origins:power_active",
+                "power": "*:hermes/god_speed_toggle",
+                "inverted": true
+            }
+        ]
+    },
+    "name": "Fast Food",
+    "description": "Sprinting gives you saturation over time."
+}

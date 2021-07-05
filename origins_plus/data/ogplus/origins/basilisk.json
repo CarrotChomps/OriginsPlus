@@ -1,0 +1,14 @@
+{
+    "powers": [
+        "ogplus:basilisk/lethal_gaze",
+        "ogplus:imp/carnivore",
+        "ogplus:basilisk/serpent_speed",
+        "ogplus:basilisk/sun_allergy",
+        "ogplus:basilisk/burrow_sleeper"
+    ],
+    "icon": "minecraft:flint",
+    "order": 2,
+    "impact": 2,
+    "name": "Basilisk",
+    "description": "A Snake-like Origin their ties to the Gorgon Origin give them similar powers but a lowered standard."
+}

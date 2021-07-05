@@ -1,0 +1,22 @@
+{
+    "type": "origins:multiple",
+    "fire_immune": {
+        "type": "origins:fire_immunity"
+    },
+    "lava_resistance": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:fire_resistance",
+                "duration": 100,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": false
+            }
+        },
+        "interval": 60
+    },
+    "name": "Fire Resistance",
+    "description": "You cannot be set on fire and are immune to lava."
+}

@@ -1,0 +1,9 @@
+{
+    "type": "origins:modify_swim_speed",
+    "modifier": {
+        "operation": "multiply_base",
+        "value": 2
+    },
+    "name": "Fast Fish",
+    "description": "You swim much faster in water."
+}

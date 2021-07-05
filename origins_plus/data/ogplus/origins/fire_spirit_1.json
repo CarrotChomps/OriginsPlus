@@ -1,0 +1,17 @@
+{
+    "powers": [
+        "ogplus:fire_spirit/inferno_form",
+        "ogplus:fire_spirit/fire_resistance",
+        "ogplus:fire_spirit/can_eat_fuel",
+        "ogplus:phoenix/cook_raw_food",
+        "ogplus:fire_spirit/shoot_fireball",
+        "ogplus:fire_spirit/weakening_water",
+        "ogplus:fire_spirit/hot_hands"
+    ],
+    "icon": "minecraft:blaze_rod",
+    "order": 2,
+    "impact": 2,
+	"unchoosable": true,
+    "name": "§cRaging Inferno",
+    "description": "A powerful entity who channels all fire for pure chaos and destruction."
+}

@@ -1,0 +1,58 @@
+{
+    "type": "origins:multiple",
+    "effect": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:exhaust",
+                    "amount": 0.5
+                },
+                {
+                    "type": "origins:apply_effect",
+                    "effects": [
+                        {
+                            "effect": "minecraft:slowness",
+                            "amplifier": 1,
+                            "duration": 25,
+                            "show_particles": false,
+                            "show_icon": false
+                        }
+                    ]
+                }
+            ]
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:in_block",
+                    "block_condition": {
+                        "type": "origins:and",
+                        "conditions": [
+                            {
+                                "type": "origins:block",
+                                "block": "minecraft:water"
+                            }
+                        ]
+                    }
+                },
+                {
+                    "type": "origins:in_rain"
+                },
+                {
+                    "type": "origins:biome",
+                    "condition": {
+                        "type": "origins:temperature",
+                        "comparison": "<=",
+                        "compare_to": 0
+                    }
+                }
+            ]
+        }
+    },
+    "name": "Heated Core",
+    "description": "You are slowed in water and cold areas due those conditions lowering your internal tempature."
+}

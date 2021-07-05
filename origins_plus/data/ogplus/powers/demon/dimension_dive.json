@@ -1,0 +1,43 @@
+{
+    "type": "origins:multiple",
+    "teleport": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:dimension",
+                "dimension": "minecraft:overworld"
+            },
+            "if_action": {
+                "type": "origins:execute_command",
+                "command": "function ogplus:demon/dimension/dive/start_dive",
+                "permission_level": 4
+            },
+            "else_action": {
+                "type": "origins:execute_command",
+                "command": "function ogplus:demon/dimension/return/start_return",
+                "permission_level": 4
+            }
+        },
+        "cooldown": 500,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 3
+        }
+    },
+    "cooldown": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:trigger_cooldown",
+            "power": "*:*_teleport"
+        },
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "player"
+        },
+        "cooldown": 40
+    },
+    "name": "Dimensional Dive §f§u(1)",
+    "description": "You can travel between your current dimension. However you must be out of combat to do so and teleporting can be chaotic at sometimes."
+}

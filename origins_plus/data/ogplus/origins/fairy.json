@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"ogplus:fairy/fairy_flight",
+		"ogplus:fairy/fairy_glitter",
+		"ogplus:flower_witch/can_eat_flora",
+		"ogplus:fairy/fairy_form"
+	],
+	"icon": "minecraft:dandelion",
+	"order": 1,
+	"impact": 2,
+	"name": "Fairy",
+	"description": "Fairies come in many shapes and sizes, some have magical properties or unique skills that make them stand out from one another."
+}

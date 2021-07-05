@@ -1,0 +1,12 @@
+{
+	"powers": [
+		"ogplus:rabbit_size",
+		"ogplus:bovinian/conjure_milk",
+		"ogplus:bunny/toggle_jump_boost"
+	],
+	"icon": "minecraft:glass_bottle",
+	"order": 1,
+	"impact": 2,
+	"name": "Milk Bunny",
+	"description": "A Rabbit-like Origin that has a mysterious other half."
+}

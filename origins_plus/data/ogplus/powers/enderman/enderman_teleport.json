@@ -1,0 +1,51 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "function ogplus:enderman/teleport/init",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:delay",
+        "ticks": 10,
+        "action": {
+          "type": "origins:if_else",
+          "condition": {
+            "type": "origins:scoreboard",
+            "objective": "refundCooldown",
+            "comparison": ">",
+            "compare_to": 0
+          },
+          "if_action": {
+            "type": "origins:and",
+            "actions": [
+              {
+                "type": "origins:execute_command",
+                "command": "resource operation @s ogplus:enderman/enderman_teleport -= @s refundCooldown",
+                "permission_level": 4
+              },
+              {
+                "type": "origins:delay",
+                "ticks": 10,
+                "action": {
+                  "type": "origins:execute_command",
+                  "command": "scoreboard players set @s refundCooldown 0",
+                  "permission_level": 4
+                }
+              }
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "cooldown": 180,
+  "hud_render": {
+    "bar_index": 6
+  },
+  "name": "True Teleportation §f§u(1)",
+  "description": "You teleport to whatever block you are looking at."
+}

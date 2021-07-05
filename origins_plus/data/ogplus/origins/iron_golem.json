@@ -1,0 +1,17 @@
+{
+    "powers": [
+        "ogplus:iron_golem/living_steel",
+        "ogplus:iron_golem/create_shiny_emerald",
+        "ogplus:iron_golem/forged_construct",
+        "ogplus:iron_golem/impervious_iron",
+        "ogplus:iron_golem/cant_float",
+        "ogplus:iron_golem/village_accustomed",
+		"origins:aqua_affinity"
+    ],
+    "icon": "minecraft:iron_ingot",
+    "order": 1,
+	"unchoosable": true,
+    "impact": 3,
+    "name": "§7Iron Golem",
+    "description": "Bounded with the goal to protect others, this defensive origin can take a hit and will always be there when needed."
+}

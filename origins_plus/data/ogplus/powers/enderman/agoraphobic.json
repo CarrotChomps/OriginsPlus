@@ -1,0 +1,25 @@
+{
+    "type": "origins:multiple",
+    "shake":{
+
+        "type": "origins:shaking",
+        "condition": {
+            "type": "origins:scoreboard",
+            "objective": "nearbyPlayers",
+            "comparison": ">=",
+            "compare_to": 3
+        }
+    },
+    "test": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:execute_command",
+            "command": "execute at @s as @s run function ogplus:enderman/agoraphobic/count_players",
+            "permission_level": 4
+        },
+        "interval": 20
+    },
+    "hidden": true,
+    "name": "Outsider",
+    "description": "You start shaking when alot of people are nearby."
+}

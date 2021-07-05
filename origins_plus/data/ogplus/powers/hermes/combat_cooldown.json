@@ -1,0 +1,25 @@
+{
+    "type": "origins:multiple",
+    "timer": {
+        "type": "origins:cooldown",
+        "cooldown": 200,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 17
+        }
+    },
+    "trigger": {
+            "type": "origins:self_action_when_hit",
+            "entity_action": {
+                "type": "origins:trigger_cooldown",
+                "power": "*:*/combat_cooldown_timer"
+            },
+            "damage_condition": {
+                "type": "origins:name",
+                "name": "player"
+            },
+            "cooldown": 20
+    },
+    "hidden": true
+}

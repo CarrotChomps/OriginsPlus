@@ -1,0 +1,45 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:exhaust",
+				"amount": 2
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "clear @s minecraft:bucket 1",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:give",
+				"stack": {
+					"item": "minecraft:milk_bucket",
+					"amount": 1
+				}
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:equipped_item",
+		"equipment_slot": "mainhand",
+		"item_condition": {
+			"type": "origins:ingredient",
+			"ingredient": {
+				"item": "minecraft:bucket"
+			}
+		}
+	},
+	"key": {
+		"key": "key.use"
+	},
+	"cooldown": 200,
+	"hud_render": {
+		"should_render": true,
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+		"bar_index": 9
+	},
+	"name": "Conjure Milk",
+	"description": "You can fill empty buckets with milk using *Magic* by Right-Clicking them."
+}

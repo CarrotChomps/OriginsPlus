@@ -1,0 +1,46 @@
+{
+    "type": "origins:multiple",
+    "modify_size": {
+        "type": "extraorigins:modify_size",
+        "scale": 1
+    },
+    "attribute_modifiers": {
+        "type": "origins:attribute",
+        "modifiers": [
+            {
+                "name": "Origin modifier",
+                "attribute": "generic.max_health",
+                "value": 0,
+                "operation": "addition"
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "generic.attack_damage",
+                "value": 0,
+                "operation": "addition"
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "generic.movement_speed",
+                "value": 0,
+                "operation": "addition"
+            },
+            {
+                "name": "Origin modifier",
+                "attribute": "reach-entity-attributes:reach",
+                "value": 0,
+                "operation": "addition"
+            }
+        ]
+    },
+    "jump_modifier": {
+        "type": "origins:modify_jump",
+        "modifier": {
+            "name": "Origin modifier",
+            "value": 0,
+            "operation": "multiply_total"
+        }
+    },
+    "name": "Spirit Size",
+    "description": "You are a normal in size and build."
+}

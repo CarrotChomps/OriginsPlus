@@ -1,0 +1,54 @@
+{
+    "type": "origins:multiple",
+    "effect": {
+        "type": "origins:toggle_night_vision",
+        "strength": 0.5,
+        "key": {
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "blindness_immunity": {
+        "type": "origins:effect_immunity",
+        "effects": [
+            "minecraft:blindness"
+        ]
+    },
+    "sound": {
+        "type": "origins:active_self",
+        "entity_action": {
+            "type": "origins:if_else",
+            "condition": {
+                "type": "origins:power_active",
+                "power": "*:*_toggle"
+            },
+            "if_action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.wither.ambient",
+                "volume": 0.1,
+                "pitch": 2
+            },
+            "else_action": {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.wither.ambient",
+                "volume": 0.1,
+                "pitch": 1.5
+            }
+        },
+        "key": {
+            "key": "key.origins.secondary_active"
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "key": {
+            "active_by_default": true,
+            "key": "key.origins.secondary_active"
+        }
+    },
+    "name": "Dark Vision §f§u(2)",
+    "description": "You can see in the Dark and are also immune to the blindness effect."
+}

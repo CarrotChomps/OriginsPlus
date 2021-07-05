@@ -1,0 +1,46 @@
+{
+	"type": "origins:active_self",
+	"entity_action": {
+		"type": "origins:and",
+		"actions": [
+			{
+				"type": "origins:if_else",
+				"condition": {
+					"type": "origins:origin",
+					"origin": "ogplus:garden_fairy_0"
+				},
+				"if_action": {
+					"type": "origins:execute_command",
+					"command": "origin set @s origins:origin ogplus:garden_fairy_1",
+					"permission_level": 4
+				},
+				"else_action": {
+					"type": "origins:execute_command",
+					"command": "origin set @s origins:origin ogplus:garden_fairy_0",
+					"permission_level": 4
+				}
+			},
+			{
+				"type": "origins:execute_command",
+				"command": "particle minecraft:poof ~ ~1 ~ 0.5 0.5 0.5 0 20",
+				"permission_level": 4
+			},
+			{
+				"type": "origins:play_sound",
+				"sound": "minecraft:entity.chicken.egg"
+			}
+		]
+	},
+	"condition": {
+		"type": "origins:resource",
+		"resource": "ogplus:garden_fairy/human_form_heal_controller",
+		"comparison": "==",
+		"compare_to": 0
+	},
+	"cooldown": 20,
+	"hud_render": {
+		"should_render": false
+	},
+	"name": "Fairy Form Change §f§u(1)",
+	"description": "Activate to change between your Human Form and your Fairy Form."
+}

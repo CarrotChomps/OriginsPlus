@@ -1,0 +1,53 @@
+{
+    "type": "origins:multiple",
+    "flower_boost": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:speed",
+                "duration": 60,
+                "amplifier": 1,
+                "show_particles": false,
+                "show_icon": false
+            }
+        },
+        "interval": 40,
+        "condition": {
+            "type": "origins:biome",
+            "biomes": [
+                "minecraft:nether_wastes",
+                "minecraft:crimson_forest",
+                "minecraft:warped_forest",
+                "minecraft:soul_sand_valley",
+                "minecraft:desert",
+                "minecraft:desert_hills",
+                "minecraft:basalt_deltas"
+            ]
+        }
+    },
+    "cold_slow": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:slowness",
+                "duration": 60,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": true
+            }
+        },
+        "interval": 40,
+        "condition": {
+            "type": "origins:biome",
+            "condition": {
+                "type": "origins:temperature",
+                "comparison": "<=",
+                "compare_to": 0
+            }
+        }
+    },
+    "name": "Cold Blooded",
+    "description": "You gain speed in Nether Biomes but gain slowness in Cold Biomes."
+}

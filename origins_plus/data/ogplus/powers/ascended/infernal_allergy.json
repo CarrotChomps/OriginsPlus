@@ -1,0 +1,33 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:apply_effect",
+        "effects": [
+            {
+                "effect": "minecraft:slowness",
+                "duration": 25,
+                "amplifier": 0,
+                "show_particles": false
+            },
+            {
+                "effect": "minecraft:weakness",
+                "duration": 25,
+                "amplifier": 0,
+                "show_particles": false
+            }
+        ]
+    },
+    "interval": 20,
+    "condition": {
+        "type": "origins:biome",
+        "biomes": [
+            "minecraft:nether_wastes",
+            "minecraft:crimson_forest",
+            "minecraft:warped_forest",
+            "minecraft:soul_sand_valley",
+            "minecraft:basalt_deltas"
+        ]
+    },
+    "name": "Infernal Allergy",
+    "description": "Being in the nether causes you to be weakend and slowed."
+}

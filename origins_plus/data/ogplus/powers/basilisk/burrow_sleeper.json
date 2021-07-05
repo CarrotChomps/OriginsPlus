@@ -1,0 +1,19 @@
+{
+    "type": "origins:prevent_sleep",
+    "message": "You are above ground or exposed to the sky.",
+    "block_condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:exposed_to_sky"
+            },
+            {
+                "type": "origins:height",
+                "comparison": ">=",
+                "compare_to": 63
+            }
+        ]
+    },
+    "name": "Burrow Sleeper",
+    "description": "You can only sleep below y = 63 and when you are not exposed to the Sky."
+}

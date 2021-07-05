@@ -1,0 +1,35 @@
+{
+    "type": "origins:damage_over_time",
+    "interval": 20,
+    "onset_delay": 1,
+    "damage": 2,
+    "damage_easy": 1,
+    "damage_source": {
+        "name": "hurt_by_sun",
+        "unblockable": true,
+        "bypasses_armor": true
+    },
+    "condition": {
+        "type": "origins:and",
+        "conditions": [
+            {
+                "type": "origins:exposed_to_sun"
+            },
+            {
+                "type": "origins:equipped_item",
+                "equipment_slot": "head",
+                "item_condition": {
+                    "type": "origins:armor_value",
+                    "comparison": ">",
+                    "compare_to": 0
+                },
+                "inverted": true
+            },
+            {
+                "type": "origins:daytime"
+            }
+        ]
+    },
+    "name": "Sun Weakness",
+    "description": "Being exposed to the sun deals damage to you over time, unless are wearing a helmet"
+}
