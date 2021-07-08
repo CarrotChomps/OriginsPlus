@@ -4,16 +4,16 @@
 		"type": "origins:if_else",
 		"condition": {
 			"type": "origins:status_effect",
-			"effect": "minecraft:jump_boost"
+			"effect": "minecraft:glowing"
 		},
 		"if_action": {
 			"type": "origins:clear_effect",
-			"effect": "minecraft:jump_boost"
+			"effect": "minecraft:glowing"
 		},
 		"else_action": {
 			"type": "origins:apply_effect",
 			"effect": {
-				"effect": "minecraft:jump_boost",
+				"effect": "minecraft:glowing",
 				"is_ambient": true,
 				"show_particles": false,
 				"show_icon": true,
@@ -30,6 +30,6 @@
 		"should_render": true
 		
 	},
-	"name": "Rat's Leap",
-	"description": "When you press your secondary, you can toggle jump boost on and off."
+	"name": "Star's Light",
+	"description": "When you press your secondary, you can toggle glowing on & off."
 }
