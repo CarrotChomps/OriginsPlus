@@ -1,0 +1,38 @@
+{
+  "type": "origins:multiple",
+  "modify_size": {
+	"type": "extraorigins:modify_size",
+	"scale": 0.6
+  },
+  "attribute_modifiers": {
+	"type": "origins:attribute",
+	"modifiers": [
+	  {
+		"name": "Origin modifier",
+		"attribute": "generic.max_health",
+		"value": -6,
+		"operation": "addition"
+	  },
+	  {
+		"name": "Origin modifier",
+		"attribute": "generic.attack_speed",
+		"value": 0.5,
+		"operation": "addition"
+	  },
+	  {
+		"name": "Origin modifier",
+		"attribute": "generic.movement_speed",
+		"value": -0.02,
+		"operation": "addition"
+	  },
+	  {
+		"name": "Origin modifier",
+		"attribute": "reach-entity-attributes:reach",
+		"value": -1,
+		"operation": "addition"
+	  }
+	]
+  },
+	"name": "Cat Size",
+	"description": "You are about 1 meter tall, Have 3 less hearts than a Human, and can't reach as far."
+}

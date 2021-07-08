@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"ogplus:catgirl/cat_size",
+		"ogplus:catboy/cat_claws",
+        "origins:fall_immunity",
+		"ogplus:catboy/toggle_jump_boost"
+	],
+	"icon": "minecraft:salmon",
+	"order": 1,
+	"impact": 2,
+	"name": "Catgirl (Tabaxi)",
+	"description": "A Feline-like Origin who enjoy jumping around and adventuring."
+}
