@@ -1,0 +1,29 @@
+
+{
+	"name": "Night Vision",
+	"description": "Your eye sight improves in the night time!",
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 4,
+    "duration_per_stack": 80,
+    "effects": [
+        {
+        "effect": "minecraft:strength",
+        "amplifier": 0,
+        "ambient": true,
+        "show_particles": false,
+        "show_icon": false
+    }
+    ],
+    "condition":{
+      "type": "origins:and",
+  "conditions": [
+            {
+      "type": "origins:daytime",
+      "inverted":true
+            {
+			}
+         ]
+                }
+      }
+
