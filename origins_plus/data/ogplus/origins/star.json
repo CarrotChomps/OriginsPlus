@@ -1,6 +1,6 @@
 {
 	"powers": [
-	ogplus:star/glow
+	ogplus:glow
 	],
 	"icon": "minecraft:nether_star",
 	"order": 10,
