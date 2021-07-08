@@ -1,0 +1,9 @@
+{
+	"powers": [
+	],
+	"icon": "minecraft:nether_star",
+	"order": 10,
+	"impact": 3,
+	"name": "Star",
+	"description": "You're a dying star that came to inhabit a being on Earth."
+}
