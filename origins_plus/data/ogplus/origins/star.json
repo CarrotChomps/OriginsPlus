@@ -2,7 +2,8 @@
 	"powers": [
 	"ogplus:star/glow",
 	"ogplus:star/regen",
-	"ogplus:star/strength"
+	"ogplus:star/strength",
+	"ogplus:star/nightvision"
 	],
 	"icon": "minecraft:nether_star",
 	"order": 10,
