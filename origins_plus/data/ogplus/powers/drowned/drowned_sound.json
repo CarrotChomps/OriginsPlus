@@ -1,0 +1,10 @@
+{
+    "type": "origins:modify_damage_taken",
+    "self_action": {
+        "type": "origins:play_sound",
+        "sound": "minecraft:entity.drowned.hurt",
+        "volume": 0.3,
+        "pitch": 1
+    },
+    "hidden": true
+}

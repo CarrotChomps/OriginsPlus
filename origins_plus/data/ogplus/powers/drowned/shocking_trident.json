@@ -1,0 +1,21 @@
+{
+    "type": "origins:modify_projectile_damage",
+    "damage_condition": {
+        "type": "origins:projectile",
+        "projectile": "minecraft:trident"
+    },
+    "target_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:spawn_entity",
+                "entity_type": "minecraft:lightning_bolt"
+            }
+        ]
+    },
+    "condition": {
+        "type": "origins:in_rain"
+    },
+    "name": "Storm Trident",
+    "description": "Thrown Tridents strike Lightning upon their target if you are in the rain."
+}

@@ -1,26 +1,45 @@
 {
-    "type": "origins:stacking_status_effect",
-    "min_stacks": 0,
-    "max_stacks": 4,
-    "duration_per_stack": 80,
-    "effects": [
-        {
-            "effect": "minecraft:strength",
-            "amplifier": 0,
-            "ambient": true,
-            "show_particles": false,
-            "show_icon": false
+    "type": "origins:multiple",
+    "night_vision": {
+        "type": "origins:night_vision",
+        "strength": 1,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:daytime",
+                    "inverted": true
+                }
+            ]
         }
-    ],
-    "condition": {
-        "type": "origins:and",
-        "conditions": [
+    },
+    "glowing": {
+        "type": "origins:stacking_status_effect",
+        "min_stacks": 0,
+        "max_stacks": 1,
+        "duration_per_stack": 20,
+        "effects": [
             {
-                "type": "origins:daytime",
-                "inverted": true
+                "effect": "minecraft:glowing",
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": false
             }
-        ]
-    },    
+        ],
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:daytime",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:sneaking",
+                    "inverted": true
+                }
+            ]
+        }
+    },
     "name": "Bright Vision",
-    "description": "You have Night Vision when the Moon is out."
+    "description": "You have Night Vision and Glow when the Moon is out. Crouching disables the glow."
 }

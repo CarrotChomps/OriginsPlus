@@ -1,0 +1,35 @@
+{
+    "type": "origins:multiple",
+    "swim": {
+        "type": "origins:modify_swim_speed",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 1.5
+        }
+    },
+    "food": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:feed",
+            "food": 4,
+            "saturation": 4
+        },
+        "interval": 10,
+        "condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": "<",
+                    "compare_to": 0
+                },
+                {
+                    "type": "origins:in_rain"
+                }
+            ]
+        }
+    },
+    "name": "Bottom Feeder",
+    "description": "You swim faster and gain saturation while in water."
+}

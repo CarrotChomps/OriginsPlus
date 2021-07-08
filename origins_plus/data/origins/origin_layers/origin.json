@@ -9,6 +9,7 @@
     "ogplus:bunny",
     "ogplus:catboy",
     "ogplus:demon",
+    "ogplus:drowned",
     "ogplus:dinofolk",
     "ogplus:dwarf",
     "ogplus:enderman",
@@ -42,9 +43,9 @@
     "ogplus:phoenix",
     "ogplus:panda",
     "ogplus:robot",
+    "ogplus:star",
     "ogplus:wisp",
     "ogplus:witch",
-    "ogplus:wood_elf",
-    "ogplus:star"
+    "ogplus:wood_elf"
   ]
 }

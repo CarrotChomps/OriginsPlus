@@ -1,6 +1,6 @@
 {
     "name": "Sun Friend",
-    "description": "You get strength from your star friend, the sun",
+    "description": "You get strength from your star friend, the Sun",
     "type": "origins:stacking_status_effect",
     "min_stacks": 0,
     "max_stacks": 4,
@@ -9,13 +9,13 @@
         {
             "effect": "minecraft:strength",
             "amplifier": 0,
-            "show_particles": true,
+            "show_particles": false,
             "show_icon": false
         },
         {
             "effect": "minecraft:regeneration",
             "amplifier": 0,
-            "show_particles": true,
+            "show_particles": false,
             "show_icon": false
         }
     ],

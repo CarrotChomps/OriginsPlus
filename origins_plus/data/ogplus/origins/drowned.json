@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"ogplus:fish/fish_breathing",
+		"ogplus:drowned/shocking_trident",
+		"ogplus:drowned/bottom_feeder",
+		"ogplus:drowned/forecast",
+		"ogplus:drowned/starter_trident",
+		"ogplus:drowned/drowned_sound",
+		"origins:aqua_affinity"
+	],
+	"icon": "minecraft:trident",
+	"order": 1,
+	"impact": 2,
+	"name": "Drowned",
+	"description": "A Sea-based Origin who taps into the ocean to gain its abilities."
+}

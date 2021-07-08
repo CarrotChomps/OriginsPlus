@@ -10,17 +10,8 @@
                     "effect": {
                         "effect": "minecraft:jump_boost",
                         "duration": 20,
-                        "amplifier": 2,
-                        "show_icon": false,
-                        "show_particles": false
-                    }
-                },
-                {
-                    "type": "origins:apply_effect",
-                    "effect": {
-                        "effect": "minecraft:slow_falling",
-                        "duration": 20,
-                        "amplifier": 0,
+                        "amplifier": 3,
+                        "is_ambient": true,
                         "show_icon": false,
                         "show_particles": false
                     }
@@ -56,11 +47,11 @@
                         "type": "origins:play_sound",
                         "sound": "minecraft:block.fire.ambient",
                         "volume": 0.5,
-                        "pitch": 1
+                        "pitch": 0.75
                     },
                     {
                         "type": "origins:execute_command",
-                        "command": "title @s actionbar {\"text\":\"STAR BOOST ON\",\"color\":\"green\"}",
+                        "command": "title @s actionbar {\"text\":\"STAR BOOST OFF\",\"color\":\"red\"}",
                         "permission_level": 4
                     }
                 ]
@@ -72,18 +63,18 @@
                         "type": "origins:play_sound",
                         "sound": "minecraft:block.fire.ambient",
                         "volume": 0.5,
-                        "pitch": 0.75
+                        "pitch": 1
                     },
                     {
                         "type": "origins:execute_command",
-                        "command": "title @s actionbar {\"text\":\"STAR BOOST OFF\",\"color\":\"red\"}",
+                        "command": "title @s actionbar {\"text\":\"STAR BOOST ON\",\"color\":\"green\"}",
                         "permission_level": 4
                     }
                 ]
             }
         },
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.primary_active"
         },
         "cooldown": 1,
         "hud_render": {
@@ -94,7 +85,7 @@
         "type": "origins:toggle",
         "active_by_default": false,
         "key": {
-            "key": "key.origins.secondary_active"
+            "key": "key.origins.primary_active"
         }
     },
     "name": "Star Boost §f§u(2)",
