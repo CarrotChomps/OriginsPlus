@@ -1,13 +1,12 @@
 {
 	"powers": [
-	"ogplus:star/glow",
-	"ogplus:star/regen",
-	"ogplus:star/strength",
-	"ogplus:star/nightvision"
+		"ogplus:star/solar_power",
+		"ogplus:star/star_boost",
+		"ogplus:star/nightvision"
 	],
 	"icon": "minecraft:nether_star",
 	"order": 10,
-	"impact": 3,
+	"impact": 2,
 	"name": "Star",
-	"description": "You're a dying star that came to inhabit a being on Earth."
+	"description": "A Celestial Origin that is known for the power it gains from the Sun."
 }
