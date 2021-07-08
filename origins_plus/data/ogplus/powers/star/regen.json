@@ -1,7 +1,7 @@
 
 {
-	"name": "Photosynthesize",
-	"description": "You get regen when exposed to the sun.",
+	"name": "Star Friendship",
+	"description": "You get regeneration from your star friend, the sun",
     "type": "origins:stacking_status_effect",
     "min_stacks": 0,
     "max_stacks": 4,
@@ -27,5 +27,6 @@
 			}
          ]
                 }
+}
       }
 
