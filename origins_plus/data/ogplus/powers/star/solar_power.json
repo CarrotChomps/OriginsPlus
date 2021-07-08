@@ -1,6 +1,6 @@
 {
-    "name": "Sun Friend",
-    "description": "You get strength from your star friend, the Sun",
+    "name": "Star Power",
+    "description": "You get strength from your star friends",
     "type": "origins:stacking_status_effect",
     "min_stacks": 0,
     "max_stacks": 4,
@@ -24,7 +24,7 @@
         "conditions": [
             {
                 "type": "origins:daytime",
-                "inverted": false
+                "inverted": true
             },
             {
                 "type": "origins:exposed_to_sky"

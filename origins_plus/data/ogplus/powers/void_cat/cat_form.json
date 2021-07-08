@@ -1,0 +1,9 @@
+{
+	"type": "origins:multiple",
+	"modify_size": {
+		"type": "extraorigins:modify_size",
+		"scale": 1
+	},
+	"name": "Cat Form",
+	"description": "You are the size of a Human."
+}

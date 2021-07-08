@@ -1,0 +1,16 @@
+{
+	"powers": [
+		"ogplus:void_cat/sun_weakness",
+		"ogplus:imp/carnivore",
+		"ogplus:void_cat/cat_form",
+		"ogplus:void_cat/form_change",
+		"ogplus:void_cat/fade_out",
+		"ogplus:void_cat/dark_vision",
+		"ogplus:void_cat/dark_hunger"
+	],
+	"icon": "minecraft:black_wool",
+	"order": 1,
+	"impact": 2,
+	"name": "Void Cat",
+	"description": "A mysterious Origin that plays in the dark and avoids the light."
+}

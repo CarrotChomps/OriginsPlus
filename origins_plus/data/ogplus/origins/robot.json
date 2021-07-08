@@ -3,7 +3,8 @@
 		"ogplus:robot/charge",
 		"ogplus:robot/rocket_boost",
 		"ogplus:robot/shoot_laser",
-		"ogplus:robot/emergency_landing"
+		"ogplus:robot/emergency_landing",
+        "ogplus:iron_golem/cant_float"
 	],
 	"icon": "minecraft:redstone",
 	"order": 1,

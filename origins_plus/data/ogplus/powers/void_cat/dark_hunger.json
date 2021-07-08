@@ -1,0 +1,21 @@
+{
+    "type": "origins:action_over_time",
+    "entity_action": {
+        "type": "origins:feed",
+        "food": 1,
+        "saturation": 3
+    },
+    "interval": 10,
+    "condition": {
+        "type": "origins:or",
+        "conditions": [
+            {
+                "type": "origins:brightness",
+                "comparison": "<=",
+                "compare_to": 0.2
+            }
+        ]
+    },
+    "name": "Dark Hunger",
+    "description": "You gain saturation when you are in dark places."
+}

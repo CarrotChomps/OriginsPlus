@@ -1,0 +1,45 @@
+{
+	"type": "origins:multiple",
+	"cooldown": {
+		"type": "origins:active_self",
+		"entity_action": {
+			"type": "origins:and",
+			"actions": [
+				{
+					"type": "origins:trigger_cooldown",
+					"power": "ogplus:void_cat/fade_out_cooldown"
+				},
+				{
+					"type": "origins:execute_command",
+					"command": "particle minecraft:large_smoke ~ ~1 ~ 0.5 0.5 0.5 0 20",
+					"permission_level": 4
+				},
+				{
+					"type": "origins:play_sound",
+					"sound": "minecraft:block.fire.ambient"
+				}
+			]
+		},
+		"key": {
+			"key": "key.origins.secondary_active"
+		},
+		"cooldown": 400,
+		"hud_render": {
+			"should_render": true,
+			"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+			"bar_index": 16
+		}
+	},
+	"invis": {
+		"type": "origins:invisibility",
+		"render_armor": false,
+		"condition": {
+			"type": "origins:resource",
+			"resource": "ogplus:void_cat/fade_out_cooldown",
+			"comparison": ">",
+			"compare_to": 0
+		}
+	},
+	"name": "Fade Out §f§u(2)",
+	"description": "Activate to go completely invisible for a duration."
+}

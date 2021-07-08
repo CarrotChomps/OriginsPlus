@@ -5,7 +5,7 @@
 		"ogplus:star/nightvision"
 	],
 	"icon": "minecraft:nether_star",
-	"order": 10,
+	"order": 1,
 	"impact": 2,
 	"name": "Star",
 	"description": "A Celestial Origin that is known for getting its power from the Sun."
