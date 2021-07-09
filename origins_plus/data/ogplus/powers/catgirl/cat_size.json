@@ -10,7 +10,7 @@
 	  {
 		"name": "Origin modifier",
 		"attribute": "generic.max_health",
-		"value": -6,
+		"value": -4,
 		"operation": "addition"
 	  },
 	  {
@@ -24,15 +24,9 @@
 		"attribute": "generic.movement_speed",
 		"value": -0.02,
 		"operation": "addition"
-	  },
-	  {
-		"name": "Origin modifier",
-		"attribute": "reach-entity-attributes:reach",
-		"value": -1,
-		"operation": "addition"
 	  }
 	]
   },
 	"name": "Cat Size",
-	"description": "You are about 1 meter tall, Have 3 less hearts than a Human, and can't reach as far."
+	"description": "You are about 1 meter tall, Have 2 less hearts than a Human."
 }
