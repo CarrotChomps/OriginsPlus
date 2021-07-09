@@ -1,0 +1,19 @@
+{
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "magic"
+    },
+    "self_action": {
+        "type": "origins:feed",
+        "food": 2,
+        "saturation": 2
+    },
+    "modifier": {
+        "name": "Deadly Diet",
+        "operation": "multiply_base",
+        "value": -1
+    },
+    "name": "Deadly Diet",
+    "description": "When inflicted from a poisonous or harming potion effect, instead of taking damage, you restore hunger."
+}

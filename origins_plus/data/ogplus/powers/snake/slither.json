@@ -1,0 +1,16 @@
+{
+    "type": "origins:multiple",
+    "climbing": {
+        "type": "origins:climbing",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:collided_horizontally"
+                }
+            ]
+        }
+    },
+    "name": "Slither",
+    "description": "You can climb on walls."
+}

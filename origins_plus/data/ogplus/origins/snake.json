@@ -1,0 +1,14 @@
+{
+    "powers": [
+        "ogplus:snake/toxic_cloud",
+        "ogplus:snake/snake_build",
+        "ogplus:snake/poison_touch",
+        "ogplus:snake/deadly_diet",
+        "ogplus:snake/slither"
+    ],
+    "icon": "minecraft:ghast_tear",
+    "order": 1,
+    "impact": 2,
+    "name": "Snake",
+    "description": "An Origin that is known for its deadly poison and sneaky slithering."
+}
