@@ -1,0 +1,69 @@
+{
+    "type": "origins:multiple",
+    "heal": {
+        "type": "origins:self_action_on_hit",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:feed",
+                    "food": 6,
+                    "saturation": 4
+                },
+                {
+                    "type": "origins:heal",
+                    "amount": 6.0
+                }
+            ]
+        },
+        "cooldown": 250,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "deal": {
+        "type": "origins:target_action_on_hit",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:execute_command",
+                    "command": "playsound minecraft:entity.generic.drink voice @a[distance=..7] ~ ~ ~ 0.25 1.25",
+                    "permission_level": 4
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "particle minecraft:dust 1 0 0 2 ~ ~0.75 ~ 0.2 0.2 0.2 0 5 normal",
+                    "permission_level": 4
+                }
+            ]
+        },
+        "cooldown": 250,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 5
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:equipped_item",
+                    "equipment_slot": "mainhand",
+                    "item_condition": {
+                        "type": "origins:ingredient",
+                        "ingredient": {
+                            "item": "minecraft:air"
+                        }
+                    }
+                },
+                {
+                    "type": "origins:sneaking",
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "name": "Draining Touch",
+    "description": "Punching people with an empty hand heals and feeds you."
+}

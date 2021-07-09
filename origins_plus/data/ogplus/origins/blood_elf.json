@@ -1,0 +1,15 @@
+{
+    "powers": [
+        "ogplus:blood_elf/dark_flight",
+        "ogplus:blood_elf/life_steal",
+        "ogplus:blood_elf/night_boost",
+        "ogplus:imp/carnivore",
+        "ogplus:blood_elf/hunter_vision",
+        "ogplus:elven_build"
+    ],
+    "icon": "minecraft:red_concrete",
+    "order": 1,
+    "impact": 2,
+    "name": "§cBlood-Elf",
+    "description": "A rare variant of Elves that utilize old-magic to do what they please."
+}

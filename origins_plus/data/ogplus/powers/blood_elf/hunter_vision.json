@@ -1,0 +1,38 @@
+{
+    "type": "origins:multiple",
+    "effect": {
+        "type": "origins:entity_glow",
+        "entity_condition": {
+            "type": "origins:or",
+            "conditions": [
+                {
+                    "type": "origins:relative_health",
+                    "comparison": "<=",
+                    "compare_to": 0.5
+                }
+            ]
+        }
+    },
+    "boost": {
+        "type": "origins:self_action_on_kill",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:apply_effect",
+                    "effect": {
+                        "effect": "minecraft:strength",
+                        "duration": 200,
+                        "amplifier": 0
+                    }
+                }
+            ]
+        },
+        "cooldown": 1,
+        "hud_render": {
+            "should_render": false
+        }
+    },
+    "name": "Life Hunter",
+    "description": "Killing gives strength and you can sense when beings are close to death."
+}
