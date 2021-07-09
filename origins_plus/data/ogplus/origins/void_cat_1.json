@@ -13,5 +13,5 @@
 	"impact": 2,
 	"name": "Void Cat (Shadow)",
 	"description": "A mysterious Origin that plays in the dark and avoids the light.",
-	"hidden": true
+	"unchoosable": true
 }
