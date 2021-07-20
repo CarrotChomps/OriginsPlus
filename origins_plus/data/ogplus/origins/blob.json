@@ -1,0 +1,13 @@
+{
+	"powers": [
+		"ogplus:blob/gooey_gift",
+		"ogplus:blob/bounce",
+		"ogplus:blob/slimey_diet",
+		"extraorigins:green_thumb"
+	],
+	"icon": "minecraft:slime_ball",
+	"order": 1,
+	"impact": 2,
+	"name": "Blob",
+	"description": "A close descendant to the Slime, this Origin looks to help with its gooey gifts."
+}

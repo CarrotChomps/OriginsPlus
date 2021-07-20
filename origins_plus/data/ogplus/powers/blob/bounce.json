@@ -1,0 +1,46 @@
+{
+    "type": "origins:modify_damage_taken",
+    "damage_condition": {
+        "type": "origins:name",
+        "name": "fall"
+    },
+    "self_action": {
+        "type": "origins:and",
+        "actions": [
+            {
+                "type": "origins:execute_command",
+                "command": "/stopsound @a[distance=..10] * minecraft:entity.generic.small_fall",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:execute_command",
+                "command": "/stopsound @a[distance=..10] * minecraft:entity.generic.big_fall",
+                "permission_level": 4
+            },
+            {
+                "type": "origins:add_velocity",
+                "y": 1
+            },
+            {
+                "type": "origins:add_velocity",
+                "z": 0.3,
+                "space": "local"
+            },
+            {
+                "type": "origins:play_sound",
+                "sound": "minecraft:entity.slime.squish"
+            }
+        ]
+    },
+    "modifier": {
+        "name": "Bounce",
+        "operation": "multiply_base",
+        "value": -1
+    },
+    "condition": {
+        "type": "origins:sneaking",
+        "inverted": true
+    },
+    "name": "Blob Bounce",
+    "description": "You bounce instead of taking fall damage."
+}
