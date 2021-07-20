@@ -1,0 +1,15 @@
+{
+	"type": "origins:multiple",
+	"climbing": {
+		"type": "origins:climbing",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:collided_horizontally"
+				}
+			]
+		}
+	},
+	"hidden": true
+}

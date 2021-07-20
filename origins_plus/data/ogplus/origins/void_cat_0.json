@@ -3,9 +3,10 @@
 		"ogplus:void_cat/form_change",
 		"ogplus:void_cat/fade_out",
 		"ogplus:void_cat/sun_weakness",
-		"ogplus:imp/carnivore",
+		"ogplus:cat_boy/fish_diet",
 		"ogplus:void_cat/cat_form",
 		"ogplus:void_cat/dark_vision",
+		"ogplus:void_cat/climb",
 		"ogplus:void_cat/dark_hunger"
 	],
 	"icon": "minecraft:black_wool",
