@@ -10,20 +10,29 @@
             },
             {
                 "type": "origins:execute_command",
-                "command": "clear @s slimeball 1",
+                "command": "clear @s slime_ball 1",
                 "permission_level": 4
             },
             {
                 "type": "origins:play_sound",
                 "sound": "minecraft:entity.generic.eat"
+            },
+            {
+                "type": "origins:add_velocity",
+                "y": 1
+            },
+            {
+                "type": "origins:add_velocity",
+                "z": 0.3,
+                "space": "local"
             }
         ]
     },
     "key": {
-        "key": "key.attack",
+        "key": "key.use",
         "continuous": true
     },
-    "cooldown": 5,
+    "cooldown": 20,
     "hud_render": {
         "should_render": false
     },
@@ -39,14 +48,9 @@
                         "item": "minecraft:slime_ball"
                     }
                 }
-            },
-            {
-                "type": "origins:food_level",
-                "comparison": "<",
-                "compare_to": 20
             }
         ]
     },
     "name": "Slimey Diet",
-    "description": "Left Click with Slimeballs in your hand to eat them."
+    "description": "Right Click with Slimeballs in your hand to eat them and give your self a boost."
 }

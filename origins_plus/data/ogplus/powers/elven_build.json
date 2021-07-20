@@ -1,8 +1,12 @@
 {
     "type": "origins:multiple",
     "modify_size": {
-        "type": "extraorigins:modify_size",
-        "scale": 1.05
+        "type": "origins:action_on_callback",
+        "entity_action_added": {
+            "type": "origins:execute_command",
+            "command": "scale set scale 1.05",
+            "permission_level": 4
+        }
     },
     "modify_width": {
         "type": "origins:action_on_callback",
