@@ -15,6 +15,8 @@ These origins were made for the intention to be fun; not necessarily balanced.
 
 If you have questions on how I implemented these features you are free to ask.
 ## Credit
+Make sure to give credit if you plan to use this pack publicly in anyway. (It's not enforced but it would be very appreciated!)
+
 Rights and Credit goes to those that have worked on their corresponding works.
 This repository is public and free of use, however I will shut down the repository if people decide to distribute it
 for pay without my consent.
