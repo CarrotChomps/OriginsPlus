@@ -1,0 +1,115 @@
+{
+    "type": "origins:multiple",
+    "ability": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "name": "Super Speed",
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": 2
+        },
+        "tick_rate": 5,
+        "condition": {
+            "type": "origins:power_active",
+            "power": "powers:speed_toggle"
+        }
+    },
+    "toggle": {
+        "type": "origins:toggle",
+        "active_by_default": false,
+        "key": {
+            "key": "key.origins.primary_active"
+        }
+    },
+    "depletion": {
+        "type": "origins:exhaust",
+        "interval": 20,
+        "exhaustion": 1.0,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sprinting"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "powers:speed_toggle"
+                }
+            ]
+        }
+    },
+    "auto_step": {
+        "type": "origins:action_on_callback",
+        "entity_action_gained": {
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:step_height 2"
+        },
+        "entity_action_lost": {
+            "type": "origins:execute_command",
+            "command": "scale set pehkui:step_height 1"
+        },
+        "execute_chosen_when_orb": true
+    },
+    "run_on_water": {
+        "type": "origins:walk_on_fluid",
+        "fluid": "minecraft:water",
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:power_active",
+                    "power": "powers:speed_toggle"
+                },
+                {
+                    "type": "origins:fluid_height",
+                    "fluid": "minecraft:water",
+                    "comparison": "<=",
+                    "compare_to": 0.4
+                }
+            ]
+        }
+    },
+    "disable": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:toggle",
+            "power": "powers:speed_toggle"
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:on_block",
+                    "block_condition": {
+                        "type": "origins:block",
+                        "block": "minecraft:water"
+                    }
+                },
+                {
+                    "type": "origins:moving",
+                    "inverted": true
+                }
+            ]
+        }
+    },
+    "air_speed": {
+        "type": "origins:modify_air_speed",
+        "modifier": {
+            "operation": "multiply_total",
+            "value": 1.5
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:sprinting"
+                },
+                {
+                    "type": "origins:power_active",
+                    "power": "powers:speed_toggle"
+                }
+            ]
+        }
+    }
+}

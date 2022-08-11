@@ -1,0 +1,114 @@
+{
+    "type": "origins:multiple",
+    "ability": {
+        "type": "origins:creative_flight",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "powers:flight_resource",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 7,
+        "start_value": 7,
+        "hud_render": {
+            "should_render": true,
+            "sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_01.png",
+            "bar_index": 4
+        }
+    },
+    "depletion": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:and",
+            "actions": [
+                {
+                    "type": "origins:change_resource",
+                    "resource": "powers:flight_resource",
+                    "change": -1,
+                    "operation": "add"
+                },
+                {
+                    "type": "origins:toggle",
+                    "power": "powers:flight_ability",
+                    "condition": {
+                        "type": "origins:resource",
+                        "resource": "powers:flight_resource",
+                        "comparison": "<=",
+                        "compare_to": 0
+                    }
+                },
+                {
+                    "type": "origins:trigger_cooldown",
+                    "power": "powers:flight_cooldown"
+                }
+            ]
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:creative_flying"
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "powers:flight_resource",
+                    "comparison": ">=",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "regeneration": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "powers:flight_resource",
+            "change": 1,
+            "operation": "add"
+        },
+        "interval": 20,
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:creative_flying",
+                    "inverted": true
+                },
+                {
+                    "type": "origins:resource",
+                    "resource": "powers:flight_cooldown",
+                    "comparison": "<=",
+                    "compare_to": 0
+                }
+            ]
+        }
+    },
+    "cooldown": {
+        "type": "origins:cooldown",
+        "cooldown": 200,
+        "hud_render": {
+            "should_render": true,
+            "condition": {
+                "type": "origins:resource",
+                "resource": "powers:flight_resource",
+                "comparison": "==",
+                "compare_to": 0
+            }
+        }
+    },
+    "break_speed": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 4
+        },
+        "condition": {
+            "type": "origins:creative_flying"
+        }
+    }
+}

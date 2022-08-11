@@ -1,0 +1,8 @@
+{
+    "powers": [
+        "powers:flight"
+    ],
+    "icon": "minecraft:feather",
+    "order": 1,
+    "impact": 1
+}
