@@ -1,0 +1,110 @@
+{
+    "type": "origins:multiple",
+    "water_breathing": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effect": {
+                "effect": "minecraft:water_breathing",
+                "duration": 100,
+                "amplifier": 0,
+                "show_particles": false,
+                "show_icon": false
+            }
+        },
+        "interval": 80
+    },
+    "water_strength": {
+        "type": "origins:conditioned_attribute",
+        "modifier": {
+            "attribute": "minecraft:generic.attack_damage",
+            "operation": "addition",
+            "value": 2,
+            "name": "Water Strength"
+        },
+        "tick_rate": 20,
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    },
+    "swim_speed": {
+        "type": "origins:modify_swim_speed",
+        "modifier": {
+            "operation": "addition",
+            "value": 0.025
+        }
+    },
+    "bottom_feeder": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:feed",
+            "food": 2,
+            "saturation": 2
+        },
+        "interval": 200,
+        "entity_condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    },
+    "water_vision": {
+        "type": "origins:night_vision",
+        "strength": 1,
+        "condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    },
+    "land_weakness": {
+        "type": "origins:modify_damage_taken",
+        "modifier": {
+            "name": "Weaker on land",
+            "operation": "multiply_base",
+            "value": 0.05
+        },
+        "entity_condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water",
+            "inverted": true
+        }
+    },
+    "fire_weakness": {
+        "type": "origins:modify_damage_taken",
+        "damage_condition": {
+            "type": "origins:fire"
+        },
+        "modifier": {
+            "name": "Weak to fire",
+            "operation": "multiply_base",
+            "value": 0.05
+        }
+    },
+    "nether_weakness": {
+        "type": "origins:damage_over_time",
+        "interval": 200,
+        "onset_delay": 1,
+        "damage": 2,
+        "damage_easy": 1,
+        "damage_source": {
+            "name": "onFire"
+        },
+        "protection_enchantment": "minecraft:fire_protection",
+        "protection_effectiveness": 1.0,
+        "condition": {
+            "type": "origins:dimension",
+            "dimension": "minecraft:nether"
+        }
+    },
+    "water_mining": {
+        "type": "origins:modify_break_speed",
+        "modifier": {
+            "operation": "multiply_base",
+            "value": 4
+        },        
+        "entity_condition": {
+            "type": "origins:submerged_in",
+            "fluid": "minecraft:water"
+        }
+    }
+}
